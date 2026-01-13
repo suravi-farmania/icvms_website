@@ -61,16 +61,17 @@ nav {
 
 /* home css start */
 .hero_section .details_title .hero_section_heading h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 65px;
-
+    font-size: 45px;
+    line-height: 50px;
 }
 
 .hero_section .hero_section_para p {
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
+     font-family: 'Poppins', sans-serif;
+    font-size: 17px;
     color: dimgray;
+    line-height: 40px;
 }
 
 /* .hero_section .button_link{
@@ -243,16 +244,16 @@ nav {
   }
 
  .about .mission{
-     font-family: 'Merriweather', serif;
-    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
     font-weight: 600;
  } 
 .about  .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px; 
   cursor: pointer;
-   font-family: 'Merriweather', serif;
-    font-size: 25px;
+   font-family: 'Poppins', sans-serif;
+    font-size: 17px;
 }
 
 .about .card:hover {
@@ -280,6 +281,10 @@ nav {
   border-radius: 2px;
 }
 
+.about .lead{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
 
   .cta-section .button_link .verify_button{
      color: #C39900FF;
@@ -306,8 +311,8 @@ nav {
  
  
  .accreditation_home .head h2{
-   font-family: 'Merriweather', serif; 
-  font-size: 36px; 
+   font-family: 'Poppins', sans-serif;
+  font-size: 45px; 
   line-height: 40px; 
   font-weight: 700; 
   color: #171A1FFF;
@@ -316,24 +321,25 @@ nav {
     border-bottom: 3px solid slateblue;
     transition: all 0.4s linear;
     cursor: pointer;
+    height:230px;
 }
 
 .accreditation_home .card:hover{
    transform: translateY(-10px);
    transition: all 0.4s linear;
-   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+   box-shadow: 4px 6px 8px  rgba(0, 0, 0, 0.2);
 }
  .accreditation_home .card .card-title{
- font-family: 'Merriweather', serif; 
-  font-size: 20px; 
+ font-family: 'Poppins', sans-serif;
+  font-size: 23px; 
   line-height: 28px; 
   font-weight: 600; 
   color: #171A1FFF;
  }
 .accreditation_home .card .card-text{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px; 
-  line-height: 24px; 
+  line-height: 28px; 
   font-weight: 400; 
   color: #171A1FFF;
 }
@@ -552,16 +558,16 @@ nav {
 }
 
 .about .about_details h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
     line-height: 48px;
     font-weight: 700;
     color: #19191FFF;
 }
 
 .about .about_details p {
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
     line-height: 40px;
     font-weight: 400;
     color: #19191FFF;
