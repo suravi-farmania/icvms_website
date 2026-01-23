@@ -18,21 +18,4 @@ jQuery(document).ready(function ($) {
     
     // ================== Search panel
 
-
-    $(".cancle-icon").css("display", "none");
-    $(".search-icon").click(function () {
-
-        $(".search-form").addClass("search-toggle");
-        $("body").addClass("overflow-hidden");
-
-        $(".cancle-icon").show();
-    });
-
-    $(".cancle-icon").click(function () {
-        $(".search-form").removeClass("search-toggle");
-        $("body").removeClass("overflow-hidden");
-    });
-
-
-
 });

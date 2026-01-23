@@ -1,0 +1,128 @@
+footer {
+    background: linear-gradient(90deg, #08152CFF 0%, #C39900FF 100%);
+    padding: 48px 0;
+}
+
+.footer-top-row {
+    align-items: center;
+    --bs-gutter-y: 30px;
+
+
+}
+
+.footer-cnt-social {
+    color: var(--white-color);
+
+    // @include tab-portrait {
+    //     text-align: center;
+    // }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 14px;
+
+        @include tab-portrait {
+            margin-bottom: 18px;
+        }
+    }
+
+    .footer-social {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            // @include tab-portrait {
+            //     justify-content: center;
+            // }
+
+            li {
+                padding: 0;
+                margin: 0;
+
+                a {
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    img {
+                        max-width: 20px;
+                        transition: 0.3s all;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-menu-wpr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 16px;
+
+    @include tab-portrait{
+        justify-content: space-between;
+    }
+
+    @include mobile-lg{
+        justify-content: space-between;
+        gap: 20px; 
+    }
+
+    .footer-menu {
+        color: var(--white-color);
+        min-width: 184px;
+
+        @include tab-portrait{
+            min-width: 100px;
+        }
+
+       
+
+        .footer-title {
+            font-weight: 600;
+            font-family: var(--heading-font);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.44;
+            text-transform: capitalize;
+            color: #FFFFFFCC;
+
+            li {
+                margin: 0 0 8px;
+                padding: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-divider {
+    margin-top: 42px;
+    border-bottom: 1px solid #ffffffcc;
+}

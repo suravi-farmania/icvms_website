@@ -1,0 +1,75 @@
+.btn-grp {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px 20px ;
+}
+
+.sec-head {
+    margin-bottom: 60px;
+
+    @include tab-landscape {
+        margin-bottom: 40px;
+    }
+
+    @include tab-portrait {
+        margin-bottom: 26px;
+    }
+}
+
+.pillar-card {
+    padding: 24px;
+    height: 100%;
+
+    @include mobile-lg {
+        padding: 20px;
+    }
+
+    figure {
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 24px;
+
+        img {
+            height: 100%;
+        }
+
+        @include tab-portrait {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 14px;
+        }
+
+    }
+
+    h3 {
+        margin-bottom: 0.88em;
+
+        @include tab-portrait {
+            margin-bottom: 0.6em;
+        }
+    }
+}
+
+.team-card {
+    background: var(--white-color);
+    text-align: center;
+    padding: 24px 20px;
+
+    @include mobile-lg {
+        padding: 20px;
+    }
+
+    figure {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 12px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}

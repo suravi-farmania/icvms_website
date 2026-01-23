@@ -29,13 +29,13 @@
 
     <!----------- header start ----------->
 
-    <header class="header">
+    <header class="main-header">
 
-        <div class="container-fluid p-0">
+        <div class="container ">
 
             <nav class="navbar d-flex">
-                <a class="navbar-brand" href="index.php">
-                    <!-- <img src="images/logo.svg" alt="logo"> -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" alt="logo">
                 </a>
 
                 <div class="menu-overlay" id="menu_overlay"></div>
@@ -44,18 +44,24 @@
 
                     <div class="responsive-logo">
                         <a href="index.php">
-                            <!-- <img class="logo-desktop" src="images/logo.svg" alt="logo"> -->
+                            <img class="logo-desktop" src="images/logo.jpg" alt="logo">
                         </a>
                     </div>
 
                     <div class="mobile-scroll">
-                        <div class="primary-nav non-default-ul">
+                        <div class="primary-nav ">
                             <ul id="myUL" class="navbar-nav">
 
-                                <li class=""><a href="index.php">home</a></li>
-                                <li class=""><a href="#">profile</a></li>
-                                <!-- <li class=""><a href="businesses.php">businesses</a></li> -->
-                                <li class="menu-item-has-children">
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="accreditation.html">accreditation</a></li>
+                                <li><a href="standards.html">standards and ethics</a></li>
+                                <li><a href="news.html">news & updates</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="verify.html">verify trust seal</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+
+                                <!-- <li class="menu-item-has-children">
                                     <a href="javascript:void(0);">businesses</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Business Link</a></li>
@@ -64,18 +70,15 @@
                                         <li><a href="#">Vitae in sit</a></li>
                                         <li><a href="#">Ante pellentesque</a></li>
                                     </ul>
-                                </li>
-                                <li class=""><a href="#">investments</a></li>
-                                <li class=""><a href="#">achievements</a></li>
-                                <li class=""><a href="#">inspirations</a></li>
-                                <li class=""><a href="#">philanthropy</a></li>
+                                </li> -->
+
 
                             </ul>
                         </div>
 
 
                         <div class="colapse-close" id="colapse_close">
-                            <!-- <img src="images/collapse-close-icon.svg" alt=""> -->
+                            <img src="images/icon-xmark.svg" alt="">
                         </div>
 
 
@@ -84,7 +87,7 @@
                 </div>
 
 
-                <div class="search-icon">search</div>
+                <div class="header-search-icon">search <img src="images/icon-search-blue.svg" alt=""></div>
 
                 <div class="hamburger-menu" id="hamburger_menu">
                     <span></span>
@@ -101,16 +104,14 @@
 
     <!----------- header End ----------->
 
-    <div class="search-form">
+    <div class="header-srch-wpr">
         <div class="container h-100">
-            <form class="d-flex h-100">
-                <div class="align-self-center position-relative w-100">
-                    <input class="form-control" type="search" placeholder="Search">
-                    <button type="submit"></button>
-                </div>
+            <form class="header-srch-frm">
+                <input type="search" placeholder="Search">
+                <!-- <button type="submit"></button> -->
             </form>
         </div>
-        <div class="cancle-icon"></div>
+        <div class="header-srch-close"><img src="images/icon-xmark.svg" alt=""></div>
     </div>
 
 
@@ -123,86 +124,298 @@
             <div class="container">
 
                 <div class="row">
+                    <!-- =============== Colors =============== -->
                     <div class="col-12">
-
-                        <h1>This is default h1 style</h1>
-
-                        <h2>This is default h2 style</h2>
-
-                        <h3>This is default h3 style</h3>
-
-                        <h4>This is default h4 style</h4>
-
-                        <h5>This is default h5 style</h5>
-
-                        <h6>This is default h6 style</h6>
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="input-wrapper">
-                                    <input type="text" placeholder="Your Name">
+                        <!-- Brand Colors -->
+                        <h4 class="mb-3">Brand Colors</h4>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-3">
+                                <div class="primary-bg white-color p-4 rounded">
+                                    <strong>Primary</strong><br>
+                                    <small>.primary-bg</small>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="input-wrapper">
-                                    <input type="email" placeholder="Email">
+                            <div class="col-md-3">
+                                <div class="primary-light-bg white-color p-4 rounded">
+                                    <strong>Primary-light</strong><br>
+                                    <small>.primary-light-bg</small>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="input-wrapper">
-                                    <input type="password" placeholder="Password">
+                            <div class="col-md-3">
+                                <div class="secondary-bg white-color p-4 rounded">
+                                    <strong>Secondary</strong><br>
+                                    <small>.secondary-bg</small>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="input-wrapper">
-                                    <select name="" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Option 1</option>
-                                        <option value="">Option 2</option>
-                                        <option value="">Option 3</option>
-                                        <option value="">Option 4</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="input-wrapper">
-                                    <input name="" type="checkbox" id="checkbox1">
-                                    <label for="checkbox1">I have a bike.</label>
-
-                                    <input name="" type="checkbox" id="checkbox2">
-                                    <label for="checkbox2">I have a car.</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="input-wrapper">
-                                    <input type="radio" id="male" name="gender" value="male">
-                                    <label for="male">Male</label>
-                                    <input type="radio" id="female" name="gender" value="female">
-                                    <label for="female">Female</label>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12">
-                                <div class="input-wrapper">
-                                    <textarea placeholder="Your Message"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="input-wrapper">
-                                    <input type="submit" value="Submit button">
-                                    <a href="#" class="btn">link button</a>
+                            <div class="col-md-3">
+                                <div class="secondary-light-bg heading-color p-4 rounded">
+                                    <strong>Secondary Light</strong><br>
+                                    <small>.secondary-light-bg</small>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!-- Text Colors -->
+                                <h4 class="mb-3">Text Colors</h4>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="sky-bg p-4 rounded">
+                                            <span class="heading-color fw-bold">Heading Color</span><br>
+                                            <small class="content-color">.heading-color</small>
+                                        </div>
+                                    </div>
 
+                                    <div class="col-md-6">
+                                        <div class="sky-bg p-4 rounded">
+                                            <span class="content-color fw-bold">Content Color</span><br>
+                                            <small class="content-color">.content-color</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <!-- UI Colors -->
+                                <h4 class="mb-3">UI Colors</h4>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="sky-bg p-4 rounded border border-color">
+                                            <strong>Sky</strong><br>
+                                            <small>.sky-bg</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="white-bg p-4 rounded border border-color">
+                                            <strong>Border</strong><br>
+                                            <small>.border-color</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+                                <!-- Base Colors -->
+                                <h4 class="mb-3">Base Colors</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="white-bg heading-color p-4 rounded border border-color">
+                                            <strong>White</strong><br>
+                                            <small>.white-bg</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="black-bg white-color p-4 rounded">
+                                            <strong>Black</strong><br>
+                                            <small>.black-bg</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- =============== Typography =============== -->
+
+                    <div class="col-12">
+
+                        <h1>.title-h1 This is default h1 style eget vestibulum a vitae. Non rhoncus sapien, convallis
+                            hendrerit enim.</h1>
+                        <p class="content-xl">Fringilla eros ultrices diam ornare varius. Quis at turpis quis cursus.
+                            Feugiat tortor,
+                            suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit enim.
+                            Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis facilisi
+                            risus tellus nunc ac, egestas bibendum. <a href="#">Rhoncus libero</a> nunc non massa ipsum
+                            scelerisque pretium. Iaculis amet, tempus interdum felis, et vitae egestas. Habitant sed
+                            amet ornare ante pharetra dapibus a. </p>
+                        <h2>.title-h2 This is default h2 style eget vestibulum a vitae. Non rhoncus sapien, convallis
+                            hendrerit enim. Quis at turpis quis cursus.</h2>
+                        <p class="content-lg">Fringilla eros ultrices diam ornare varius. Quis at turpis quis cursus.
+                            Feugiat tortor,
+                            suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit enim.
+                            Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis facilisi
+                            risus tellus nunc ac, egestas bibendum. <a href="#">Rhoncus libero</a> nunc non massa ipsum
+                            scelerisque pretium. Iaculis amet, tempus interdum felis, et vitae egestas. Habitant sed
+                            amet ornare ante pharetra dapibus a. </p>
+                        <h3>.title-h3 This is default h3 style eget vestibulum a vitae. Non rhoncus sapien, convallis
+                            hendrerit enim. Quis at turpis quis cursus.</h3>
+                        <p class="content-md">Fringilla eros ultrices diam ornare varius. Quis at turpis quis cursus.
+                            Feugiat tortor,
+                            suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit enim.
+                            Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis facilisi
+                            risus tellus nunc ac, egestas bibendum. <a href="#">Rhoncus libero</a> nunc non massa ipsum
+                            scelerisque pretium. Iaculis amet, tempus interdum felis, et vitae egestas. Habitant sed
+                            amet ornare ante pharetra dapibus a. </p>
+
+                        <ul>
+                            <li>Sed vitae nibh diam fames ultrices euismod elementum.</li>
+                            <li>Sodales augue tortor. Pharetra adipiscing aliquet velit eu purus enim sapien.</li>
+                            <li>vel pellentesque. Sed ligula magna ac pellentesque orci.</li>
+                            <li>Facilisis gravida rhoncus mauris nec habitasse etiam orci,</li>
+                            <li>turpis facilisi risus tellus nunc ac, egestas bibendum. </li>
+                        </ul>
+                        <blockquote>Duis integer egestas neque odio arcu odio. At etiam ut mi a ullamcorper ultricies
+                            neque molestie. Diam, sed amet ut accumsan.Duis integer egestas neque odio arcu odio. At
+                            etiam ut mi a ullamcorper ultricies neque molestie. Diam, sed amet ut accumsan.Duis integer
+                            egestas neque odio arcu odio. At etiam ut mi a ullamcorper ultricies neque molestie. Diam,
+                            sed amet ut accumsan.</blockquote>
+                        <h4>.title-h4 This is default h4 style eget vestibulum a vitae. Non rhoncus sapien, convallis
+                            hendrerit enim. Quis at turpis quis cursus.</h4>
+                        <ol>
+                            <li>Sed vitae nibh diam fames ultrices euismod elementum.</li>
+                            <li>Sodales augue tortor. Pharetra adipiscing aliquet velit eu purus enim sapien.</li>
+                            <li>vel pellentesque. Sed ligula magna ac pellentesque orci.</li>
+                            <li>Facilisis gravida rhoncus mauris nec habitasse etiam orci,</li>
+                            <li>turpis facilisi risus tellus nunc ac, egestas bibendum. </li>
+                        </ol>
+                        <p class="content-sm">Fringilla eros ultrices diam ornare varius. Quis at turpis quis cursus.
+                            Feugiat tortor,
+                            suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit enim.
+                            Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis facilisi
+                            risus tellus nunc ac, egestas bibendum. <a href="#">Rhoncus libero</a> nunc non massa ipsum
+                            scelerisque pretium. Iaculis amet, tempus interdum felis, et vitae egestas. Habitant sed
+                            amet ornare ante pharetra dapibus a. </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>.title-h5 This is default h5 style eget vestibulum a vitae. Non rhoncus sapien,
+                                    convallis hendrerit enim. Quis at turpis quis cursus.</h5>
+                                <p>Fringilla eros ultrices diam ornare varius. Quis at turpis quis cursus. Feugiat
+                                    tortor,
+                                    suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit
+                                    enim.
+                                    Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis
+                                    facilisi
+                                    risus tellus nunc ac, egestas bibendum. <a href="#">Rhoncus libero</a> nunc non
+                                    massa ipsum
+                                    scelerisque pretium. Iaculis amet, tempus interdum felis, et vitae egestas. Habitant
+                                    sed
+                                    amet ornare ante pharetra dapibus a. </p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h6>.title-h6 This is default h6 style eget vestibulum a vitae. Non rhoncus sapien,
+                                    convallis hendrerit enim. Quis at turpis quis cursus.</h6>
+                                <p class="content-xs">Fringilla eros ultrices diam ornare varius. Quis at turpis quis
+                                    cursus. Feugiat tortor,
+                                    suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit
+                                    enim.
+                                    Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis
+                                    facilisi
+                                    risus tellus nunc ac, egestas bibendum. <a href="#">Rhoncus libero</a> nunc non
+                                    massa ipsum
+                                    scelerisque pretium. Iaculis amet, tempus interdum felis, et vitae egestas. Habitant
+                                    sed
+                                    amet ornare ante pharetra dapibus a. </p>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="container py-5">
+
+                            <h4 class="mb-4">Buttons</h4>
+
+                            <div class="row g-3 align-items-center">
+
+                                <div class="col-auto">
+                                    <input type="submit" value="Submit Button" class="btn btn-primary">
+                                </div>
+
+                                <div class="col-auto">
+                                    <a href="#" class="btn btn-primary">Button Primary</a>
+                                </div>
+
+                                <div class="col-auto">
+                                    <a href="#" class="btn btn-secondary">Button Secondary</a>
+                                </div>
+
+                                <div class="col-auto">
+                                    <a href="#" class="btn btn-outline">Button Outline</a>
+                                </div>
+
+                                <div class="col-auto">
+                                    <a href="#" class="btn btn-primary disabled" aria-disabled="true">
+                                        Button Disabled
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="input-wrapper">
+                                <input type="email" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="input-wrapper">
+                                <input type="password" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="input-wrapper">
+                                <select name="" id="">
+                                    <option value="">Select</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                    <option value="">Option 4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="input-wrapper">
+                                <input name="" type="checkbox" id="checkbox1">
+                                <label for="checkbox1">I have a bike.</label>
+
+                                <input name="" type="checkbox" id="checkbox2">
+                                <label for="checkbox2">I have a car.</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="input-wrapper">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <textarea placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-12">
                         <p>Fringilla eros ultrices diam ornare varius. Quis at turpis quis cursus. Feugiat tortor,
                             suspendisse velit eget vestibulum a vitae. Non rhoncus sapien, convallis hendrerit enim.
                             Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis facilisi
@@ -236,11 +449,7 @@
                             tortor. Pharetra adipiscing aliquet velit eu purus enim sapien. Arcu ullamcorper turpis
                             facilisi risus tellus nunc ac, egestas bibendum. </p>
 
-                        <blockquote>Duis integer egestas neque odio arcu odio. At etiam ut mi a ullamcorper ultricies
-                            neque molestie. Diam, sed amet ut accumsan.Duis integer egestas neque odio arcu odio. At
-                            etiam ut mi a ullamcorper ultricies neque molestie. Diam, sed amet ut accumsan.Duis integer
-                            egestas neque odio arcu odio. At etiam ut mi a ullamcorper ultricies neque molestie. Diam,
-                            sed amet ut accumsan.</blockquote>
+
 
                         <p>Sed pellentesque in ridiculus dictum amet molestie. Ultrices leo est turpis euismod.
                             Scelerisque auctor fringilla hendrerit quis purus nulla. Consectetur pellentesque in in
@@ -248,16 +457,17 @@
                             mauris et enim, nisl. Tincidunt congue volutpat leo viverra magna pellentesque at vitae nec.
                         </p>
 
-
-
                     </div>
+
+
                 </div>
-
             </div>
-
         </section>
+    </div>
 
-        <!-- ==============  Section End ============== -->
+
+
+    <!-- ==============  Section End ============== -->
 
 
 

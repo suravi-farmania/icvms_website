@@ -40,22 +40,38 @@ menuclose.addEventListener('click', function() {
 
 // ====== OnScroll Header Class Add and Remove Js ====== //
 
-let scrollpos = window.scrollY
-const header = document.querySelector("header")
-const header_height = header.offsetHeight
+const main_Header = document.querySelector(".main-header")
+const main_Header_Height = main_Header.offsetHeight
 
-const add_class_on_scroll = () => header.classList.add("dark")
-const remove_class_on_scroll = () => header.classList.remove("dark")
+const add_class_on_scroll = () => main_Header.classList.add("dark");
+const remove_class_on_scroll = () => main_Header.classList.remove("dark");
 
 window.addEventListener('scroll', function() { 
-    scrollpos = window.scrollY;
+    // scrollpos = window.scrollY;
 
-    if (scrollpos >= header_height) { add_class_on_scroll() }
+    if (window.scrollY >= main_Header_Height) { add_class_on_scroll() }
     else { remove_class_on_scroll() }
 
     // console.log(scrollpos)
     
 })
+
+
+// header search function
+
+let header_SearchEl = document.querySelector(".header-search-icon");
+let header_Srch_Frm = document.querySelector(".header-srch-wpr");
+let header_Srch_close = document.querySelector(".header-srch-close");
+console.log(header_Srch_Frm);
+
+header_SearchEl.onclick=()=>{
+    header_Srch_Frm.classList.add("open");
+}
+
+header_Srch_close.onclick=()=>{
+    header_Srch_Frm.classList.remove("open");
+}
+
 
 
 
