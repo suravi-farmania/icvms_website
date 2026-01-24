@@ -96,10 +96,10 @@ input[type="submit"] {
 
     textarea {
         @extend #{$styles};
-        height: 192px;
+        height: 120px;
         resize: none;
         padding: 16px 18px 18px;
-        border-radius: 0px;
+        border-radius: 4px;
 
         &:focus {
             @extend #{$focus_styles};
