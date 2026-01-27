@@ -1,6 +1,6 @@
 
 @mixin heading {
-    font-weight: 700;
+    font-weight: 600;
     font-family: var(--heading-font);
     line-height: 1.3;
     color: var(--heading-color);
@@ -68,6 +68,10 @@
     transition: 0.3s ease-in-out;
     outline: none;
     position: relative;
+
+    @include tab-portrait(){
+        height: 44px;
+    }
 
     // @include mobile-lg{
     //     height: 54px;

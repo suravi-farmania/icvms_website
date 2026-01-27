@@ -98,12 +98,16 @@ input[type="submit"] {
         @extend #{$styles};
         height: 120px;
         resize: none;
-        padding: 16px 18px 18px;
-        border-radius: 4px;
+        padding:8px 12px ;
+        border-radius: var(--radius-sm);
 
         &:focus {
             @extend #{$focus_styles};
             border-color: var(--primary-color);
+        }
+
+        @include tab-portrait{
+            height: 100px;
         }
     }
 
