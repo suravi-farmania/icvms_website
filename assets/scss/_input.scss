@@ -32,7 +32,7 @@
     }
 
     &.disabled,
-     &:disabled{
+    &:disabled {
         opacity: 0.3;
         pointer-events: none;
         background: var(--primary-color);
@@ -43,15 +43,10 @@
 
 }
 
-
-
-
 input[type="submit"] {
     @extend .btn;
-
-    &:hover {
-        background-color: var(--primary-color);
-    }
+    height: 40px;
+    padding: 0 12px;
 }
 
 
@@ -98,7 +93,7 @@ input[type="submit"] {
         @extend #{$styles};
         height: 120px;
         resize: none;
-        padding:8px 12px ;
+        padding: 8px 12px;
         border-radius: var(--radius-sm);
 
         &:focus {
@@ -106,7 +101,7 @@ input[type="submit"] {
             border-color: var(--primary-color);
         }
 
-        @include tab-portrait{
+        @include tab-portrait {
             height: 100px;
         }
     }

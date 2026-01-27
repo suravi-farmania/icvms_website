@@ -1,406 +1,543 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICVMS</title>
+    <!-- ====================== Css file ================== -->
 
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+    <!--  Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- third party CSS -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
+    <!-- custom CSS -->
 
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
+
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/ICVMS Logo - Revised (1).jpg" alt="" height="80"
-                        width="80"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active " href="accreditation.html" id="navbarDropdown" role="button"
-                                aria-expanded="false">
-                                Accreditation
-                            </a>
+<body id="body">
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="standards.html">Standards and Ethics </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="directory.html">Directory</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="news.html">News & Updates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">Join Us</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="verify.html">Verify Trust Seal</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
-                        </li>
+    <!----------- header start ----------->
 
-                    </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- hero_section -->
-    <Section class="hero_section_standard">
+    <header class="main-header">
 
-
-        <div class="standard_main text-center">
-            <h2>Upholding Excellence: Standards & Ethics</h2>
-            <p>At ICVMS, we are committed to maintaining the highest standards of integrity, authenticity, and
-                professional conduct in Vedic & Metaphysical sciences.</p>
-        </div>
-
-
-    </Section>
-
-    <section class="accredition_standard">
-        <div class="head_section text-center">
-            <h3>Accreditation Standards</h3>
-            <p>Our rigorous accreditation standards ensure that institutions and individuals adhere to a framework of
-                excellence, promoting quality education and practice in Vedic and Metaphysical studies.</p>
-        </div>
         <div class="container ">
 
-            <div class="row g-4 py-2">
-                <div class="col-md-4   col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/image_1.png" alt=""> Curriculum Excellence</h5>
-                            <p class="card-text">Accredited programs must feature a holistic, scientifically-backed, and
-                                ethically sound curriculum that integrates ancient wisdom with modern research and
-                                pedagogical approaches.</p>
+            <nav class="navbar d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" alt="logo">
+                </a>
 
+                <div class="menu-overlay" id="menu_overlay"></div>
+
+                <div class="collapse-menu" id="collapse_menu">
+
+                    <div class="responsive-logo">
+                        <a href="index.php">
+                            <img class="logo-desktop" src="images/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="mobile-scroll">
+                        <div class="primary-nav ">
+                            <ul id="myUL" class="navbar-nav">
+
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="accreditation.html">accreditation</a></li>
+                                <li><a href="standards.html">standards and ethics</a></li>
+                                <li><a href="news.html">news & updates</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="verify.html">verify trust seal</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+
+                                <!-- <li class="menu-item-has-children">
+                                    <a href="javascript:void(0);">businesses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Business Link</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="single-article.php">single article</a></li>
+                                        <li><a href="#">Vitae in sit</a></li>
+                                        <li><a href="#">Ante pellentesque</a></li>
+                                    </ul>
+                                </li> -->
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="colapse-close" id="colapse_close">
+                            <img src="images/icon-xmark.svg" alt="">
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-search-icon">search <img src="images/icon-search-blue.svg" alt=""></div>
+
+                <div class="hamburger-menu" id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!----------- header End ----------->
+
+    <!-- <div class="header-srch-wpr">
+        <div class="container h-100">
+            <form class="header-srch-frm">
+                <input type="search" placeholder="Search">
+            </form>
+        </div>
+        <div class="header-srch-close"><img src="images/icon-xmark.svg" alt=""></div>
+    </div> -->
+
+
+    <div class="main-wrapper">
+
+        <!-- ==============  Section Start ============== -->
+        <section class="cmn-bnr-sec standards-ethics-bnr">
+            <div class="container">
+                <div class="cmn-bnr-content text-center">
+                    <h1 class="title-h2">Upholding Excellence: <br> Standards & Ethics</h1>
+                    <p class="content-lg">At ICVMS, we are committed to maintaining the highest standards of integrity,
+                        authenticity, and
+                        professional conduct in Vedic & Metaphysical sciences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="accreditation-feature-sec">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="sec-head text-center content-md mb-40">
+                            <h2>Accreditation Standards</h2>
+                            <p>Our rigorous accreditation standards ensure that institutions and individuals adhere to a
+                                framework of excellence, promoting quality education and practice in Vedic and
+                                Metaphysical studies.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4   col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="images/image_2.png" alt=""> Faculty Qualifications</h5>
-                            <p class="card-text">Faculty members are required to possess a blend of academic rigor,
-                                profound spiritual wisdom, and practical experience in their respective fields, ensuring
-                                comprehensive guidance for students.</p>
 
+                <div class="row row-gap-y  row-cols-1 row-cols-sm-2 row-cols-lg-3 ">
+                    <div class="col">
+                        <div class="icon-text-card flex-row flex-md-row flex-sm-column box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/icon-bookopen-outlined.svg" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Curriculum Excellence</h3>
+                                <p>Accredited programs must feature a holistic, scientifically-backed, and ethically
+                                    sound
+                                    curriculum that integrates ancient wisdom with modern research and pedagogical
+                                    approaches.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4  col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="images/image_3.png" alt=""> Assessment Methodologies</h5>
-                            <p class="card-text">We mandate transparent, rigorous, and fair evaluation methods that
-                                accurately measure student comprehension, practical skills, and adherence to ethical
-                                guidelines in their practice.</p>
 
+                    <div class="col">
+                        <div class="icon-text-card flex-row flex-md-row flex-sm-column box-shadow radius-sm">
+                            <div class="icon-text-card-icon ">
+                                <img src="images/image_2.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Faculty Qualifications</h3>
+                                <p>
+                                    Faculty members are required to possess a blend of academic rigor, profound
+                                    spiritual
+                                    wisdom, and practical experience in their respective fields, ensuring comprehensive
+                                    guidance for students.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card flex-row flex-md-row flex-sm-column box-shadow radius-sm">
+                            <div class="icon-text-card-icon ">
+                                <img src="images/image_3.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Assessment Methodologies</h3>
+                                <p>
+                                    We mandate transparent, rigorous, and fair evaluation methods that accurately
+                                    measure
+                                    student comprehension, practical skills, and adherence to ethical guidelines in
+                                    their
+                                    practice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="icon-text-card flex-row flex-md-row flex-sm-column box-shadow radius-sm">
+                            <div class="icon-text-card-icon ">
+                                <img src="images/image_4.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Resource Availability</h3>
+                                <p>
+                                    Institutions must provide adequate learning resources, including libraries, research
+                                    facilities, and accessible digital platforms, to support advanced studies and
+                                    continuous learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card flex-row flex-md-row flex-sm-column box-shadow radius-sm">
+                            <div class="icon-text-card-icon ">
+                                <img src="images/image_5.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Student Welfare</h3>
+                                <p>
+                                    A commitment to student welfare, including supportive learning environments, clear
+                                    grievance
+                                    procedures, and provisions for mental and emotional well-being, is paramount.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon ">
+                                <img src="images/image_6.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Program Governance</h3>
+                                <p>
+                                    Accredited programs are expected to demonstrate strong administrative oversight,
+                                    financial
+                                    stability, and continuous improvement processes to ensure sustained quality.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-
-
-            <div class="row py-2">
-                <div class="col-md-4  col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="images/image_4.png" alt=""> Resource Availability</h5>
-                            <p class="card-text">Institutions must provide adequate learning resources, including
-                                libraries, research facilities, and accessible digital platforms, to support advanced
-                                studies and continuous learning.</p>
-
+        <section class="code-ethics-sec sky-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="sec-head text-center content-md mb-40">
+                            <h2>Code of Ethics</h2>
+                            <p>The ICVMS Code of Ethics guides all accredited members and institutions, fostering
+                                integrity, authenticity, and responsibility in their professional conduct and
+                                interactions.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4  col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="images/image_5.png" alt=""> Student Welfare</h5>
-                            <p class="card-text">A commitment to student welfare, including supportive learning
-                                environments, clear grievance procedures, and provisions for mental and emotional
-                                well-being, is paramount.</p>
 
+                <div class="row row-gap-y  row-cols-1 row-cols-md-2">
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_1.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Integrity &amp; Honesty</h3>
+                                <p>
+                                    Members must uphold the highest standards of truthfulness in all communications,
+                                    avoiding
+                                    misrepresentation and respecting intellectual property rights in their teachings and
+                                    practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_4.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Authenticity &amp; Respect</h3>
+                                <p>
+                                    Cultivating cultural sensitivity, non-discrimination, and deep reverence for the
+                                    diverse traditions
+                                    and lineages within Vedic and Metaphysical sciences is fundamental.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_2.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Responsibility &amp; Accountability</h3>
+                                <p>
+                                    Adherence to professional boundaries, strict confidentiality of client information,
+                                    and a proactive
+                                    approach to ensuring the welfare and safety of all individuals served.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_5.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Continuous Improvement</h3>
+                                <p>
+                                    Members are encouraged to engage in regular self-reflection, seek constructive
+                                    feedback, and embrace
+                                    opportunities for personal and professional growth within their chosen fields.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_3.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Ethical Research</h3>
+                                <p>
+                                    Conducting research with utmost ethical considerations, ensuring participant
+                                    consent, data privacy,
+                                    and unbiased reporting of findings to contribute responsibly to the body of
+                                    knowledge.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_6.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Community Engagement</h3>
+                                <p>
+                                    Fostering a spirit of collaboration, mutual respect, and support within the ICVMS
+                                    community and the
+                                    broader Vedic &amp; Metaphysical landscape, for collective advancement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="professional-development-sec">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="sec-head text-center content-md mb-40">
+                            <h2>Continuous Professional Development</h2>
+                            <p>ICVMS mandates Continuous Professional Development (CPD) to ensure our accredited
+                                members remain at the forefront of evolving knowledge and best practices in Vedic &
+                                Metaphysical studies..</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4  col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="images/image_6.png" alt=""> Program Governance</h5>
-                            <p class="card-text">Accredited programs are expected to demonstrate strong administrative
-                                oversight, financial stability, and continuous improvement processes to ensure sustained
-                                quality.</p>
 
+                <div class="row row-gap-y  row-cols-1 row-cols-md-2">
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_3.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Framework &amp; Requirements</h3>
+                                <p>
+                                    Members are required to complete a specified number of CPD hours annually,
+                                    engaging in approved
+                                    activities such as workshops, seminars, and advanced courses, tracked via a
+                                    secure portal.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="col">
+                        <div class="icon-text-card box-shadow radius-sm">
+                            <div class="icon-text-card-icon">
+                                <img src="images/code_6.png" alt="">
+                            </div>
+                            <div class="icon-text-card-text">
+                                <h3 class="content-lg">Benefits of CPD</h3>
+                                <p>
+                                    CPD enhances professional credibility, ensures updated knowledge and skills,
+                                    fosters innovation,
+                                    and strengthens community engagement among peers, advancing the field globally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="disciplinary-appeals-sec sky-bg">
+            <div class="container">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="sec-head text-center content-md mb-40">
+                                <h2>Disciplinary & Appeals Procedures</h2>
+                                <p>To uphold our ethical standards, ICVMS has clearly defined procedures for addressing
+                                    breaches of conduct and ensuring a fair and impartial process for all appeals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-gap-y  row-cols-1 row-cols-md-2">
+                        <div class="col">
+                            <div class="icon-text-card box-shadow radius-sm">
+                                <div class="icon-text-card-icon">
+                                    <img src="images/sec_1.png" alt="">
+                                </div>
+                                <div class="icon-text-card-text">
+                                    <h3 class="content-lg">Disciplinary Process</h3>
+                                    <p>
+                                        The process begins with the submission of a formal complaint, followed by a
+                                        thorough investigation,
+                                        a fair hearing, and the imposition of appropriate sanctions, if warranted, to
+                                        maintain standards.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="icon-text-card box-shadow radius-sm">
+                                <div class="icon-text-card-icon">
+                                    <img src="images/sec_2.png" alt="">
+                                </div>
+                                <div class="icon-text-card-text">
+                                    <h3 class="content-lg">Appeals Process</h3>
+                                    <p>
+                                        Members have the right to appeal a disciplinary decision based on specified
+                                        grounds. An independent
+                                        review panel will evaluate the case, leading to a final, binding decision.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="code">
-        <div class="head_section text-center">
-            <h3>Code of Ethics</h3>
-            <p>The ICVMS Code of Ethics guides all accredited members and institutions, fostering integrity,
-                authenticity, and responsibility in their professional conduct and interactions.</p>
-        </div>
+        <!-- ==============  Section End ============== -->
+
+    </div>
+
+    <footer>
         <div class="container">
-            <div class="row py-2  g-4">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_1.png" alt="">Integrity & Honesty</h5>
-                            <p class="card-text">Members must uphold the highest standards of truthfulness in all
-                                communications, avoiding misrepresentation and respecting intellectual property rights
-                                in their teachings and practices.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_4.png" alt=""> Authenticity & Respect</h5>
-                            <p class="card-text">Cultivating cultural sensitivity, non-discrimination, and deep
-                                reverence for the diverse traditions and lineages within Vedic and Metaphysical sciences
-                                is fundamental.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row py-2 g-4">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_2.png" alt="">Responsibility & Accountability
-                            </h5>
-                            <p class="card-text">Adherence to professional boundaries, strict confidentiality of client
-                                information, and a proactive approach to ensuring the welfare and safety of all
-                                individuals served.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_5.png" alt=""> Continuous Improvement</h5>
-                            <p class="card-text">Members are encouraged to engage in regular self-reflection, seek
-                                constructive feedback, and embrace opportunities for personal and professional growth
-                                within their chosen fields.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row py-2 g-4">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_3.png" alt=""> Ethical Research</h5>
-                            <p class="card-text">Conducting research with utmost ethical considerations, ensuring
-                                participant consent, data privacy, and unbiased reporting of findings to contribute
-                                responsibly to the body of knowledge.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_6.png" alt=""> Community Engagement</h5>
-                            <p class="card-text">Fostering a spirit of collaboration, mutual respect, and support within
-                                the ICVMS community and the broader Vedic & Metaphysical landscape, for collective
-                                advancement.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="professional_development">
-        <div class="head text-center">
-            <h3>Continuous Professional Development</h3>
-            <p>ICVMS mandates Continuous Professional Development (CPD) to ensure our accredited members remain at the
-                forefront of evolving knowledge and best practices in Vedic & Metaphysical studies.</p>
-        </div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_3.png" alt=""> Framework & Requirements</h5>
-                            <p class="card-text">Members are required to complete a specified number of CPD hours annually, engaging in approved activities such as workshops, seminars, and advanced courses, tracked via a secure portal.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/code_6.png" alt="">Benefits of CPD</h5>
-                            <p class="card-text">CPD enhances professional credibility, ensures updated knowledge and skills, fosters innovation, and strengthens community engagement among peers, advancing the field globally.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="discipline mt-5 pt-5 mb-5 pb-5">
-        <div class="head_contain text-center">
-            <h3>Disciplinary & Appeals Procedures</h3>
-            <p>To uphold our ethical standards, ICVMS has clearly defined procedures for addressing breaches of conduct and ensuring a fair and impartial process for all appeals.</p>
-        </div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/sec_1.png" alt="">Disciplinary Process</h5>
-                            <p class="card-text">The process begins with the submission of a formal complaint, followed by a thorough investigation, a fair hearing, and the imposition of appropriate sanctions, if warranted, to maintain standards.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"> <img src="images/sec_2.png" alt="">Appeals Process</h5>
-                            <p class="card-text">Members have the right to appeal a disciplinary decision based on specified grounds. An independent review panel will evaluate the case, leading to a final, binding decision.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- footer section -->
-    <footer class="main_footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_details">
+            <div class="row footer-top-row">
+                <div class="col-lg-4">
+                    <div class="footer-cnt-social">
                         <p>The International Council for Vedic & Metaphysical Studies (ICVMS) is dedicated to setting
                             global...</p>
-                        <div class="icons mb-2">
-                       <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                       <i class="fa-brands fa-instagram" style="color: #f7f7f8;"></i>
-                       <i class="fa-brands fa-x-twitter" style="color: #f3f4f7;"></i>
+
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
 
+                <div class="col-lg-8">
+                    <div class="footer-menu-wpr">
+                        <div class="footer-menu">
+                            <div class="footer-title">Quick Links</div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Resources</div>
+                            <ul>
+                                <li><a href="#">Standards & Ethics</a></li>
+                                <li><a href="#">Directory</a></li>
+                                <li><a href="#">News & Updates</a></li>
+                                <li><a href="#">Trust Seal Verification</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Legal</div>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Quick Links</p>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="accreditation.html">
-                            <li>Accreditation</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact US</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                   <ul class="quick_links">
-                        <p>Resources</p>
-                        <a href="standards.html">
-                            <li>Standards & Ethic</li>
-                        </a>
-                        <!-- <a href="directory.html">
-                            <li>Directory</li>
-                        </a> -->
-                        <a href="news.html">
-                            <li>News & Updates</li>
-                        </a>
-                        <a href="verify.html">
-                            <li>Trust Seal Verification</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Legal</p>
-                        <a href="privacy.html">
-                            <li>Privacy Policy</li>
-                        </a>
-                        <a href="terms.html">
-                            <li>Terms of Service</li>
-                        </a>
-                        
-                    </ul>
-                </div>
+
             </div>
+
+            <div class="footer-divider"></div>
         </div>
     </footer>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
+
+<!-- ====================== Js file ================== -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/swiper.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="assets/js/custom-js.js"></script>
 
 </html>
