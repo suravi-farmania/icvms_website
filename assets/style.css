@@ -6,8 +6,8 @@
 }
 
 nav {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     font-weight: 400;
 
 
@@ -61,17 +61,16 @@ nav {
 
 /* home css start */
 .hero_section .details_title .hero_section_heading h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Merriweather', serif;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 65px;
+
 }
 
 .hero_section .hero_section_para p {
-     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
     color: dimgray;
-    line-height: 40px;
 }
 
 /* .hero_section .button_link{
@@ -83,13 +82,13 @@ nav {
 .hero_section .accredition_button {
     background-color: #03173b;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
+    font-family: Open Sans;
     padding: 0 12px;
     background: #08152CFF;
     border-radius: 4px;
     box-shadow: 0px 0px 2px #171a1f14;
     color: #FFFFFFFF;
-    font-size: 17px;
+    font-size: 16px;
     width: 247px;
     height: 48px;
     /* display:flex;
@@ -112,7 +111,7 @@ nav {
  
   justify-content: center; 
    align-items: center;  */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
     font-weight: 500;
@@ -132,8 +131,8 @@ nav {
 }
 
 .core_pillars .core_pillar_head p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
     line-height: 40px;
     font-weight: 600;
     color: #08152CFF;
@@ -141,8 +140,8 @@ nav {
 }
 
 .core_pillars .pillar_text p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 19px;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
     line-height: 32px;
     font-weight: 600;
     color: #171A1FFF;
@@ -150,7 +149,7 @@ nav {
 }
 
 .core_pillars .pillar_para p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -227,16 +226,16 @@ nav {
     background: #102B5AFF;
   }
   .cta-section h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
   }
   
   .cta-section .lead{
     line-height: 40px;
   }
   .cta-section p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
     line-height: 20px;
     font-weight: 400;
     color: #565D6DFF;
@@ -244,16 +243,16 @@ nav {
   }
 
  .about .mission{
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+     font-family: 'Merriweather', serif;
+    font-size: 30px;
     font-weight: 600;
  } 
 .about  .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px; 
   cursor: pointer;
-   font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+   font-family: 'Merriweather', serif;
+    font-size: 25px;
 }
 
 .about .card:hover {
@@ -281,17 +280,13 @@ nav {
   border-radius: 2px;
 }
 
-.about .lead{
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-}
 
   .cta-section .button_link .verify_button{
      color: #C39900FF;
     background: #FFFFFFFF;
     padding: 9px 12px;
     
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
     font-weight: 500;
@@ -308,86 +303,40 @@ nav {
      color: #C39900FF;
     background: #FFFFFFFF;
  }
-
- .button_link .accredition_button{
-    font-family: 'Poppins', sans-serif;
- }
  
-.accreditation_home {
-    padding: 80px 0;
-}
-
-
-.accreditation_home .head h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
-    line-height: 1.2;
-    font-weight: 700;
-    color: #171A1F;
-}
-
-
-.accreditation_cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    justify-items: center;
-}
-
-
-
-.accreditation_card {
-    width: 260px;
-    height: 230px;
-    padding: 24px;
-    background: #fff;
-    border-radius: 8px;
+ 
+ .accreditation_home .head h2{
+   font-family: 'Merriweather', serif; 
+  font-size: 36px; 
+  line-height: 40px; 
+  font-weight: 700; 
+  color: #171A1FFF;
+ }
+.accreditation_home .card{
     border-bottom: 3px solid slateblue;
+    transition: all 0.4s linear;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;      
-    align-items: center;
-    text-align: center;
-    transition: all 0.4s ease;
-    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.accreditation_card:hover {
-    transform: translateY(-10px);
-    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.15);
+.accreditation_home .card:hover{
+   transform: translateY(-10px);
+   transition: all 0.4s linear;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
-
-.accreditation_card .card-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #171A1F;
-    margin-bottom: 16px;
+ .accreditation_home .card .card-title{
+ font-family: 'Merriweather', serif; 
+  font-size: 20px; 
+  line-height: 28px; 
+  font-weight: 600; 
+  color: #171A1FFF;
+ }
+.accreditation_home .card .card-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; 
+  line-height: 24px; 
+  font-weight: 400; 
+  color: #171A1FFF;
 }
-
-
-.accreditation_card .card-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #555;
-    margin: 0;
-}
-@media (max-width: 992px) {
-    .accreditation_cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .accreditation_cards {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 
 .elevate {
@@ -401,8 +350,8 @@ nav {
 }
 
 .elevate .text_explain {
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
     line-height: 48px;
     font-weight: 700;
     color: #FFFFFFFF;
@@ -419,7 +368,7 @@ nav {
 }
 
 .main_footer .footer_details {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -436,7 +385,7 @@ nav {
 }
 
 .main_footer .quick_links p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .main_footer .quick_links li {
@@ -444,7 +393,7 @@ nav {
     font-size: 14px;
 
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #FFFFFFCC;
 }
 
@@ -603,16 +552,16 @@ nav {
 }
 
 .about .about_details h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
     line-height: 48px;
     font-weight: 700;
     color: #19191FFF;
 }
 
 .about .about_details p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
     line-height: 40px;
     font-weight: 400;
     color: #19191FFF;

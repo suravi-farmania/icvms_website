@@ -1,387 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICVMS</title>
+    <!-- ====================== Css file ================== -->
 
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+    <!--  Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <!-- third party CSS -->
 
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
+    <!-- custom CSS -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
 
-    <title></title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/ICVMS Logo - Revised (1).jpg" alt=""
-                        height="80" width="80"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active " href="accreditation.html" id="navbarDropdown" role="button"
-                                aria-expanded="false">
-                                Accreditation
-                            </a>
+<body id="body">
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="standards.html">Standards and Ethics </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="directory.html">Directory</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="news.html">News & Updates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">Join Us</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="verify.html">Verify Trust Seal</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
-                        </li>
+    <!----------- header start ----------->
 
-                    </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
+    <header class="main-header">
+
+        <div class="container ">
+
+            <nav class="navbar d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" alt="logo">
+                </a>
+
+                <div class="menu-overlay" id="menu_overlay"></div>
+
+                <div class="collapse-menu" id="collapse_menu">
+
+                    <div class="responsive-logo">
+                        <a href="index.php">
+                            <img class="logo-desktop" src="images/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="mobile-scroll">
+                        <div class="primary-nav ">
+                            <ul id="myUL" class="navbar-nav">
+
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="accreditation.html">accreditation</a></li>
+                                <li><a href="standards.html">standards and ethics</a></li>
+                                <li><a href="news.html">news & updates</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="verify.html">verify trust seal</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+
+                                <!-- <li class="menu-item-has-children">
+                                    <a href="javascript:void(0);">businesses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Business Link</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="single-article.php">single article</a></li>
+                                        <li><a href="#">Vitae in sit</a></li>
+                                        <li><a href="#">Ante pellentesque</a></li>
+                                    </ul>
+                                </li> -->
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="colapse-close" id="colapse_close">
+                            <img src="images/icon-xmark.svg" alt="">
+                        </div>
+
+
+                    </div>
+
                 </div>
-            </div>
-        </nav>
+
+
+                <div class="header-search-icon">search <img src="images/icon-search-blue.svg" alt=""></div>
+
+                <div class="hamburger-menu" id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </nav>
+
+        </div>
+
     </header>
-    <!-- hero_section -->
-    <section class="hero_section mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="details_title">
-                        <div class="hero_section_heading">
-                            <h1>Setting Global Standards in Vedic & Metaphysical Sciences</h1>
-                        </div>
-                        <div class="hero_section_para">
-                            <p>Accrediting institutions and practitioners to uphold integrity, responsibility, and
-                                harmony in the study and practice of Vedic wisdom and metaphysical sciences</p>
-                        </div>
-                    </div>
-                    <div class="button_link">
-                        <button class="accredition_button">Apply for Accreditation</button>
-                        <button class="verify_button">Verify a Certificate</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="hero_section_image mt-2">
-                        <img src="images/ICVMS Header.webp" alt="image" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+    <!-- <div class="header-srch-wpr">
+        <div class="container h-100">
+            <form class="header-srch-frm">
+                <input type="search" placeholder="Search">
+            </form>
         </div>
-    </section>
+        <div class="header-srch-close"><img src="images/icon-xmark.svg" alt=""></div>
+    </div> -->
+    <!----------- header End ----------->
 
-    <section class="about mt-5 pt-5 mb-5 pb-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="about_details text-center mb-5">
-                    <h1 class="fw-bold mb-3">About the ICVMS</h1>
-                    <p class="lead px-3">
-                        The <strong>International Council for Vedic and Metaphysical Studies (ICVMS)</strong>
-                        is a registered independent accreditation body dedicated to ensuring quality, ethics,
-                        and authenticity in the teaching and practice of disciplines such as Astrology,
-                        Numerology, Pranic Healing, Vastu, Tarot, Reiki, and other metaphysical sciences.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row mb-4">
-                <div class="mission text-center">
-                    <h3 class="fw-semibold">Our Mission</h3>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-sm-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-semibold mb-3">
-                                Establish ethical and educational standards
-                            </h5>
+    <div class="main-wrapper">
+        <section class="hero-sec">
+            <div class="container">
+                <div class="row hero-row">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1><span class="d-lg-block ">Setting Global Standards in</span> Vedic & Metaphysical
+                                Sciences.</h1>
+                            <p class="content-lg">ICVMS is the leading global accreditation body, committed to upholding
+                                the highest standards in Vedic and Metaphysical education and practice.</p>
+                            <div class="btn-grp">
+                                <a href="#" class="btn">Apply for Accreditation</a>
+                                <a href="#" class="btn btn-outline">Verify a Certificate</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-semibold mb-3">
-                                Recognize and accredit trusted trainers, practitioners, and institutions
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-semibold mb-3">
-                                Promote the responsible growth of metaphysical sciences worldwide
-                            </h5>
-                        </div>
+                    <div class="col-lg-6">
+                        <figure class="hero-img">
+                            <img src="images/hero-img.webp" alt="image" class="img-">
+                        </figure>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row mt-5">
-                <div class="col text-center">
-                    <p class="lead  px-3">
-                        By creating a framework of trust, respect, and responsibility, we empower learners,
-                        institutions, and communities to benefit from these sciences in a dignified and
-                        harmonious way.
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="accreditation_home">
-        <div class="container">
-
-            <div class="head text-center mb-5">
-                <h2>The Value of Accreditation with ICVMS</h2>
-            </div>
-
-            <div class="accreditation_cards">
-
-                <div class="accreditation_card">
-                    <h5 class="card-title">Credibility</h5>
-                    <p class="card-text">
-                        Members adhere to a strict Code of Ethics.
-                    </p>
+        <section class="core-pillar-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2>Our Core Pillars</h2>
                 </div>
 
-                <div class="accreditation_card">
-                    <h5 class="card-title">Quality Assurance</h5>
-                    <p class="card-text">
-                        Accredited institutions meet set benchmarks in teaching and practice.
-                    </p>
-                </div>
-
-                <div class="accreditation_card">
-                    <h5 class="card-title">Recognition</h5>
-                    <p class="card-text">
-                        Practitioners gain visibility and trust among students, clients, and the global community.
-                    </p>
-                </div>
-
-                <div class="accreditation_card">
-                    <h5 class="card-title">Community Commitment</h5>
-                    <p class="card-text">
-                        Every accredited member contributes to upliftment and harmony.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- corepillar -->
-    <section class="core_pillars mt-5 pt-5">
-        <div class="core_pillar_head text-center mb-5">
-            <p>Our Core Pillars</p>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="section_pillar">
-                        <div class="icon d-flex justify-content-center mb-4">
-                            <img src="images/icon_1.png" alt="">
+                <div class="row pillar-card-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pillar-card box-shadow radius-sm text-center">
+                            <figure>
+                                <img src="images/pillar-card-icon1.svg" alt="">
+                            </figure>
+                            <h3 class="title-h5">Rigorous Accreditation</h3>
+                            <p class="content-xs">Establishing global benchmarks for quality and authenticity in Vedic &
+                                Metaphysical
+                                studies.</p>
                         </div>
-                        <div class="pillar_text text-center">
-                            <p>Rigorous Accreditation</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pillar-card box-shadow radius-sm text-center">
+                            <figure>
+                                <img src="images/pillar-card-icon2.svg" alt="">
+                            </figure>
+                            <h3 class="title-h5">Expert Leadership</h3>
+                            <p class="content-xs">Guided by a distinguished board of scholars and practitioners ensuring
+                                integrity and vision.
+                                studies.</p>
                         </div>
-                        <div class="pillar_para text-center">
-                            <p>Establishing global benchmarks for quality and authenticity in Vedic & Metaphysical
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pillar-card box-shadow radius-sm text-center">
+                            <figure>
+                                <img src="images/pillar-card-icon3.svg" alt="">
+                            </figure>
+                            <h3 class="title-h5">Worldwide Acceptance</h3>
+                            <p class="content-xs">Fostering a unified international community for practitioners and
+                                institutions.
                                 studies.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="section_pillar">
-                        <div class="icon d-flex justify-content-center mb-4">
-                            <img src="images/icon_2.png" alt="">
-                        </div>
-                        <div class="pillar_text text-center">
-                            <p>Expert Leadership</p>
-                        </div>
-                        <div class="pillar_para text-center">
-                            <p>Guided by a distinguished board of scholars and practitioners ensuring integrity and
-                                vision..</p>
+            </div>
+        </section>
+
+        <section class="team-section sky-bg">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2>Meet Our Esteemed Trustees</h2>
+                </div>
+
+                <div class="row team-card-row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-card radius-sm box-shadow">
+                            <figure>
+                                <img src="images/team-img-1.jpg" alt="">
+                            </figure>
+                            <div class="team-card-info">
+                                <h3 class="content-lg">Dr. Alok Sharma</h3>
+                                <p class="content-xs">Chairman</p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-card radius-sm box-shadow">
+                            <figure>
+                                <img src="images/team-img-2.jpg" alt="">
+                            </figure>
+                            <div class="team-card-info">
+                                <h3 class="content-lg">Prof. Mira Devi</h3>
+                                <p class="content-xs">Vice-Chair</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-card radius-sm box-shadow">
+                            <figure>
+                                <img src="images/team-img-1.jpg" alt="">
+                            </figure>
+                            <div class="team-card-info">
+                                <h3 class="content-lg">Shri Vivek Singh</h3>
+                                <p class="content-xs">Secretary</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-card radius-sm box-shadow">
+                            <figure>
+                                <img src="images/team-img-2.jpg" alt="">
+                            </figure>
+                            <div class="team-card-info">
+                                <h3 class="content-lg">Smt. Anya Gupta</h3>
+                                <p class="content-xs">Board Member</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="section_pillar">
-                        <div class="icon d-flex justify-content-center mb-4">
-                            <img src="images/icon_3.png" alt="">
-                        </div>
-                        <div class="pillar_text text-center">
-                            <p>Worldwide Acceptance</p>
-                        </div>
-                        <div class="pillar_para text-center">
-                            <p>Fostering a unified international community for practitioners and institutions.</p>
-                        </div>
+            </div>
+
+        </section>
+
+        <section class="cta-sec text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="text-white">Elevating Vedic Knowledge to Global Standards.</h2>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- truestees -->
-
-
-    <section class="cta-section py-5  text-center">
+        </section>
+    </div>
+    <footer>
         <div class="container">
-            <h2 class="fw-bold mb-4">Join Our Global Community</h2>
-            <p class="lead mb-4">
-                Are you a practitioner or institution teaching Vedic or metaphysical sciences? <br>
-                Join us and become part of a growing global community of trusted professionals.
-            </p>
+            <div class="row footer-top-row">
+                <div class="col-lg-4">
+                    <div class="footer-cnt-social">
+                        <p>The International Council for Vedic & Metaphysical Studies (ICVMS) is dedicated to setting
+                            global...</p>
 
-            <div class="button_link">
-                <a href=""><button class="accredition_button">Apply for Accreditation</button></a>
-                <a href="standards.html"><button class="verify_button">Learn More About Our Standards</button></a>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="elevate mt-5 ">
-        <div class="col-md-12">
-            <div class="text_explain d-flex justify-content-center align-items-center">
-                Elevating Vedic Knowledge to Global Standards.
-            </div>
-        </div>
-    </section>
-    <!-- footer section -->
-    <footer class="main_footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_details">
-                        <p>Together, we can uplift metaphysical sciences with dignity, responsibility, and harmony</p>
-                        <div class="icons mb-2">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-instagram" style="color: #f7f7f8;"></i>
-                            <i class="fa-brands fa-x-twitter" style="color: #f3f4f7;"></i>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
 
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Quick Links</p>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="accreditation.html">
-                            <li>Accreditation</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact US</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Resources</p>
-                        <a href="standards.html">
-                            <li>Standards & Ethic</li>
-                        </a>
-                        <!-- <a href="directory.html">
-                            <li>Directory</li>
-                        </a> -->
-                        <a href="news.html">
-                            <li>News & Updates</li>
-                        </a>
-                        <a href="verify.html">
-                            <li>Trust Seal Verification</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Legal</p>
-                        <a href="privacy.html">
-                            <li>Privacy Policy</li>
-                        </a>
-                        <a href="terms.html">
-                            <li>Terms of Service</li>
-                        </a>
+                <div class="col-lg-8">
+                    <div class="footer-menu-wpr">
+                        <div class="footer-menu">
+                            <div class="footer-title">Quick Links</div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
 
-                    </ul>
+                        <div class="footer-menu">
+                            <div class="footer-title">Resources</div>
+                            <ul>
+                                <li><a href="#">Standards & Ethics</a></li>
+                                <li><a href="#">Directory</a></li>
+                                <li><a href="#">News & Updates</a></li>
+                                <li><a href="#">Trust Seal Verification</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Legal</div>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
+            <div class="footer-divider"></div>
         </div>
     </footer>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <!-- ====================== Js file ================== -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/custom-js.js"></script>
 </body>
 
 </html>

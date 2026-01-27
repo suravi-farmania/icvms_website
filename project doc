@@ -1,0 +1,44 @@
+
+Refactor the *Index page* to improve layout structure, UI consistency, and ensure full responsiveness across targeted desktop, tablet, and mobile devices. The page should render correctly without layout breaks, overlaps, or horizontal scrolling.
+
+*Scope of Work:*
+
+* Refactor existing HTML/CSS structure for better responsiveness and maintainability.
+* Align UI components with responsive best practices (flex/grid).
+* Ensure consistent spacing, typography, and component behavior across screen sizes.
+* Validate responsiveness on the following devices and resolutions:
+
+*Target Devices & Resolutions:*
+
+*Desktop:*
+
+* MacBook Pro 13-inch — *2560 × 1600*
+* MacBook Air M2 (13.7-inch) — *2560 × 1664*
+
+*Tablet:*
+
+* iPad 11th Gen (2025) — *2360 × 1640*
+
+*Mobile:*
+
+* iPhone (multiple screen sizes)
+* Android devices (standard and large screens)
+
+*Functional Requirements:*
+
+* No UI breakage or misalignment on any target resolution.
+* No horizontal scroll on desktop or tablet views.
+* Proper stacking and spacing of components on mobile.
+* Buttons, forms, and interactive elements must remain fully accessible on all devices.
+
+*Acceptance Criteria:*
+
+* Index page adapts seamlessly across all specified resolutions.
+* Responsive behavior verified using browser dev tools and real devices (where available).
+* Layout remains consistent with approved UI/UX guidelines.
+* No regression issues introduced in existing functionality.
+
+*Out of Scope:*
+
+* Feature changes or content updates (unless required for layout fixes).
+

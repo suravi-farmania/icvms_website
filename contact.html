@@ -1,248 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICVMS</title>
+    <!-- ====================== Css file ================== -->
 
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+    <!--  Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- third party CSS -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
+    <!-- custom CSS -->
 
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
+
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/ICVMS Logo - Revised (1).jpg" alt="" height="80"
-                        width="80"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active " href="accreditation.html" id="navbarDropdown" role="button"
-                                aria-expanded="false">
-                                Accreditation
-                            </a>
+<body id="body">
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="standards.html">Standards and Ethics </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="directory.html">Directory</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="news.html">News & Updates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">Join Us</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="verify.html">Verify Trust Seal</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
-                        </li>
+    <!----------- header start ----------->
 
-                    </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
+    <header class="main-header">
+
+        <div class="container ">
+
+            <nav class="navbar d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <div class="menu-overlay" id="menu_overlay"></div>
+
+                <div class="collapse-menu" id="collapse_menu">
+
+                    <div class="responsive-logo">
+                        <a href="index.php">
+                            <img class="logo-desktop" src="images/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="mobile-scroll">
+                        <div class="primary-nav ">
+                            <ul id="myUL" class="navbar-nav">
+
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="accreditation.html">accreditation</a></li>
+                                <li><a href="standards.html">standards and ethics</a></li>
+                                <li><a href="news.html">news & updates</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="verify.html">verify trust seal</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+
+                                <!-- <li class="menu-item-has-children">
+                                    <a href="javascript:void(0);">businesses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Business Link</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="single-article.php">single article</a></li>
+                                        <li><a href="#">Vitae in sit</a></li>
+                                        <li><a href="#">Ante pellentesque</a></li>
+                                    </ul>
+                                </li> -->
+
+
+                            </ul>
+                        </div>
+
+
+                        <!-- <div class="colapse-close" id="colapse_close">
+                            <img src="images/icon-xmark.svg" alt="">
+                        </div> -->
+
+
+                    </div>
+
                 </div>
-            </div>
-        </nav>
+
+
+                <!-- <div class="header-search-icon">search <img src="images/icon-search-blue.svg" alt=""></div> -->
+
+                <div class="hamburger-menu" id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </nav>
+
+        </div>
+
     </header>
     <!-- hero_section -->
-    <section class="contact">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card" >
-                        <div class="card-body">
-                            <h5 class="card-title">Get in Touch</h5>
-                            <div class="details mb-4">
+    <div class="main-wrapper">
+        <section class="contact-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="row contact-row flex-row-reverse">
 
-                                <i class="fa-regular fa-envelope" style="color:  #C39900FF;"></i>
+                    <div class="col-md-6 ">
+                        <div class="contact-form-wpr">
+                            <h3 class="title-h5">Send Us a Message</h3>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
 
-                                <span>Email</span>
-                                <p class="card-text"><a href="mailto:icvmstrust@gmail.com">icvmstrust@gmail.com</a></p>
-                            </div>
-                            <div class="details mb-4">
+                            <form action="" class="contact-form">
+                                <div class="input-wpr">
+                                    <label for="">Name</label>
+                                    <input type="text" placeholder="Your Full Name">
+                                </div>
 
-                                <i class="fa-solid fa-phone" style="color:  #C39900FF;"></i>
-                                <span>Phone</span>
-                                <p class="card-text"> <a href="tel:9875677018">(+91)9875677018</a> </p>
-                            </div>
-                            <div class="details mb-4">
+                                <div class="input-wpr">
+                                    <label for="">Email</label>
+                                    <input type="email" placeholder="Yourgmail@com">
+                                </div>
 
-                                <i class="fa-solid fa-location-dot" style="color:  #C39900FF;"></i>
-                                <span>Address</span>
-                                <p class="card-text">1st floor, Elegant Tower, 68A Circular Road, Ballygunge, Kolkata - 700017</p>
-                            </div>
+                                <div class="input-wpr">
+                                    <label for="">Message</label>
+                                    <textarea placeholder="Type your message here"></textarea>
+                                </div>
 
-                            <hr>
+                                <div class="submit-wpr">
+                                    <input class="w-100" type="submit" value="Send Message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-                            <div class="follow">
-                                <h3>Follow US</h3>
-                                <div class="icon d-flex justify-content-center">
-                                    <i class="fa-brands fa-facebook-f" style="color: #C39900FF;;"></i>
-                                    <i class="fa-brands fa-instagram" style="color: #C39900FF;"></i>
-                                    <i class="fa-brands fa-linkedin" style="color: #C39900FF;"></i>
+                    <div class="col-md-6 ">
+                        <div class="getin-touch-wpr">
+                            <h3 class="title-h5">Get in Touch</h3>
+                            <div class="contact-info">
+                                <div class="contact-info-icon">
+                                    <img src="images/icon-map-outlined.svg">
+                                </div>
+                                <div>
+                                    <label class="content-xs" for="">Email</label>
+                                    <a href="mailto:contact@icvms.org">contact@icvms.org</a>
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
+                            <div class="contact-info">
+                                <div class="contact-info-icon">
+                                    <img src="images/icon-phone-outlined.svg">
+                                </div>
+                                <div>
+                                    <label class="content-xs" for="">Phone</label>
+                                    <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                                </div>
+                            </div>
 
-                </div>
-                <div class="col-md-6">
-                  
-                        <div class="card" >
-                            <div class="card-body">
-                                <h5 class="card-title mb-3 mt-3">Send Us a Message</h5>
-                                <h6 class="card-subtitle mb-3 mt-2 text-muted">Fill out the form below and we'll get back to
-                                    you as soon as possible.</h6>
-                               
-                                <form action="">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="name" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Your Full Name">
-
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Emai</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp"  placeholder="your.email@example.com">
-
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Message
-                                                </label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                rows="3"  placeholder="Type your message here"></textarea>
-                                        </div>
-                                        
-                                        <button type="submit" class="button_form w-100">Send Message</button>
-                                    </form>
-                                </form>
+                            <div class="contact-info">
+                                <div class="contact-info-icon">
+                                    <img src="images/icon-map-outlined.svg">
+                                </div>
+                                <div>
+                                    <label class="content-xs" for="">Address</label>
+                                    <p>123 Vedic Way, Mystical City, Global State, 90210</p>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="contact-social">
+                                <h3 class="title-h5">Follow Us</h3>
+                                <ul>
+                                    <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a>
+                                    </li>
+                                    <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    
+                    </div>
+
                 </div>
+
             </div>
-        </div>
-    </section>
-    <!-- footer section -->
-    <footer class="main_footer">
+        </section>
+    </div>
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_details">
+            <div class="row footer-top-row">
+                <div class="col-lg-4">
+                    <div class="footer-cnt-social">
                         <p>The International Council for Vedic & Metaphysical Studies (ICVMS) is dedicated to setting
                             global...</p>
-                        <div class="icons mb-2">
-                       <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                       <i class="fa-brands fa-instagram" style="color: #f7f7f8;"></i>
-                       <i class="fa-brands fa-x-twitter" style="color: #f3f4f7;"></i>
+
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
 
+                <div class="col-lg-8">
+                    <div class="footer-menu-wpr">
+                        <div class="footer-menu">
+                            <div class="footer-title">Quick Links</div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Resources</div>
+                            <ul>
+                                <li><a href="#">Standards & Ethics</a></li>
+                                <li><a href="#">Directory</a></li>
+                                <li><a href="#">News & Updates</a></li>
+                                <li><a href="#">Trust Seal Verification</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Legal</div>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Quick Links</p>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="accreditation.html">
-                            <li>Accreditation</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact US</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                   <ul class="quick_links">
-                        <p>Resources</p>
-                        <a href="standards.html">
-                            <li>Standards & Ethic</li>
-                        </a>
-                        <!-- <a href="directory.html">
-                            <li>Directory</li>
-                        </a> -->
-                        <a href="news.html">
-                            <li>News & Updates</li>
-                        </a>
-                        <a href="verify.html">
-                            <li>Trust Seal Verification</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Legal</p>
-                        <a href="privacy.html">
-                            <li>Privacy Policy</li>
-                        </a>
-                        <a href="terms.html">
-                            <li>Terms of Service</li>
-                        </a>
-                        
-                    </ul>
-                </div>
+
             </div>
+
+            <div class="footer-divider"></div>
         </div>
     </footer>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <!-- ====================== Js file ================== -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/custom-js.js"></script>
 </body>
 
 </html>
