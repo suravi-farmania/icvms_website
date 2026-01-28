@@ -35,16 +35,19 @@ $iphone-vs: "(max-width: 320px)";
   --content-dark-color: #171a1f;
   --sky-color: #fafafb;
   --border-color: #ced4da;
+  --border2-color:  #dee1e6;
 
   --white-color: #ffffff;
   --black-color: #000000;
 
   // Others Variable
-  --box-shadow:0px 0px 1px #171a1f0d, 0px 0px 2px #171a1f14;
-  --radius: 6px;
+  --box-shadow: 0px 0px 1px #171a1f0d, 0px 0px 2px #171a1f14;
+
+  // radius Variable
   --radius-lg: 20px;
   --radius-md: 16px;
   --radius-sm: 4px;
+  --radius: 6px;
 
   // ============ Fonts Variable ============ // 
   --primary-font: "Merriweather", serif;
@@ -111,12 +114,20 @@ $iphone-vs: "(max-width: 320px)";
   color: var(--content-color);
 }
 
+.content-dark-color {
+  color: var(--content-dark-color);
+}
+
 .border {
   border: 1px solid var(--border-color) !important;
 }
 
 .border-color {
   border-color: var(--border-color) !important;
+}
+
+.border2-color {
+  border-color: var(--border2-color) !important;
 }
 
 .white-color {
@@ -128,7 +139,7 @@ $iphone-vs: "(max-width: 320px)";
 }
 
 .content-xl {
-  font-size: clamp(1.25rem, 1.189rem + 0.26vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 }
 
 .content-lg {
@@ -148,9 +159,10 @@ $iphone-vs: "(max-width: 320px)";
   line-height: 1.4;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: var(--box-shadow);
 }
+
 .radius {
   border-radius: 6px;
 }
@@ -166,4 +178,3 @@ $iphone-vs: "(max-width: 320px)";
 .radius-sm {
   border-radius: 4px;
 }
-

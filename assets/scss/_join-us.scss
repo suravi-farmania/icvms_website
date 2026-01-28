@@ -1,0 +1,115 @@
+.join-us-sec {
+    .sec-head {
+        margin-bottom: clamp(1.875rem, 1.275rem + 3vw, 4.875rem);
+
+        p {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.join-feature-card {
+    padding: clamp(1.25rem, 1.188rem + 0.31vw, 1.563rem);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .join-feature-card-hd {
+        display: flex;
+        align-items: center;
+        gap: clamp(0.625rem, 0.55rem + 0.38vw, 1rem);
+        margin-bottom: clamp(0.938rem, 0.7rem + 1.19vw, 2.125rem);
+
+        i {
+            display: block;
+            line-height: 0;
+            flex: none;
+            width: clamp(1.875rem, 1.75rem + 0.63vw, 2.5rem);
+            height: clamp(1.875rem, 1.75rem + 0.63vw, 2.5rem);
+        }
+    }
+
+    p {
+        margin-bottom: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
+    }
+
+    .join-feature-card-info {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .join-feature-card-btm {
+        margin-top: auto;
+
+        .btn {
+            font-size: 18px;
+
+            @include tab-portrait {
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+.tick-list-style {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            padding: 0;
+            margin: 0 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            i {
+                width: clamp(0.938rem, 0.875rem + 0.31vw, 1.25rem);
+                display: block;
+                line-height: 0;
+                flex: none;
+            }
+        }
+    }
+
+}
+
+.join-now-cta-wpr {
+    min-height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        margin-bottom: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+    }
+
+    p {
+        max-width: 672px;
+        margin:0 auto clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem);
+    }
+
+    .btn {
+        max-width: max-content;
+        margin: 0 auto;
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 20px;
+        min-width: 168px;
+
+        @include tab-portrait{
+            font-size: 18px;
+        }
+    }
+}
