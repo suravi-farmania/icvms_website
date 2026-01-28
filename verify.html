@@ -1,207 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICVMS</title>
+    <!-- ====================== Css file ================== -->
 
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+    <!--  Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- third party CSS -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
+    <!-- custom CSS -->
 
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
+
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/ICVMS Logo - Revised (1).jpg" alt="" height="80"
-                        width="80"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active " href="accreditation.html" id="navbarDropdown" role="button"
-                                aria-expanded="false">
-                                Accreditation
-                            </a>
+<body id="body">
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="standards.html">Standards and Ethics </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="directory.html">Directory</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="news.html">News & Updates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">Join Us</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="verify.html">Verify Trust Seal</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
-                        </li>
+    <!----------- header start ----------->
 
-                    </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
+    <header class="main-header">
+
+        <div class="container ">
+
+            <nav class="navbar d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" alt="logo">
+                </a>
+
+                <div class="menu-overlay" id="menu_overlay"></div>
+
+                <div class="collapse-menu" id="collapse_menu">
+
+                    <div class="responsive-logo">
+                        <a href="index.php">
+                            <img class="logo-desktop" src="images/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="mobile-scroll">
+                        <div class="primary-nav ">
+                            <ul id="myUL" class="navbar-nav">
+
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="accreditation.html">accreditation</a></li>
+                                <li><a href="standards.html">standards and ethics</a></li>
+                                <li><a href="news.html">news & updates</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="verify.html">verify trust seal</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+
+                                <!-- <li class="menu-item-has-children">
+                                    <a href="javascript:void(0);">businesses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Business Link</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="single-article.php">single article</a></li>
+                                        <li><a href="#">Vitae in sit</a></li>
+                                        <li><a href="#">Ante pellentesque</a></li>
+                                    </ul>
+                                </li> -->
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="colapse-close" id="colapse_close">
+                            <img src="images/icon-xmark.svg" alt="">
+                        </div>
+
+
+                    </div>
+
                 </div>
-            </div>
-        </nav>
+
+
+                <div class="header-search-icon">search <img src="images/icon-search-blue.svg" alt=""></div>
+
+                <div class="hamburger-menu" id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </nav>
+
+        </div>
+
     </header>
 
-    <div class="banner">
-        <div class="banner_image">
-            <img src="images/banner_image(3).jpg" alt="" class="img-fluid" width="100%">
+    <!----------- header End ----------->
+
+    <!-- <div class="header-srch-wpr">
+        <div class="container h-100">
+            <form class="header-srch-frm">
+                <input type="search" placeholder="Search">
+            </form>
         </div>
-    </div>
-    <!-- hero_section -->
-    <section class="verify_certificate py-5">
-        <div class="container">
-            <div class="row">
-                <div class="details_verify text-center">
-                    <h1 class="mb-3">Verify Your ICVMS Trust Seal</h1>
-                    <!-- <p class="lead">
-                        The ICVMS Trust Seal is your assurance of authenticity and quality in Vedic and Metaphysical
-                        studies. Each accredited certificate is issued with a unique, tamper-proof serial number.
-                    </p>
-                    <p>
-                        By entering the serial number below, you can instantly confirm the validity of any ICVMS-issued
-                        certificate, ensuring credibility and adherence to our global standards.
-                    </p> -->
+        <div class="header-srch-close"><img src="images/icon-xmark.svg" alt=""></div>
+    </div> -->
+
+
+    <div class="main-wrapper">
+
+        <!-- ==============  Section Start ============== -->
+        <section class="trust-verify-sec sky-bg">
+            <div class="container">
+                <div class="trust-verify-cont content-md text-center">
+                    <h1 class="title-h2">Verify Your ICVMS Trust Seal</h1>
+                    <p>The ICVMS Trust Seal is your assurance of authenticity and quality in Vedic and Metaphysical
+                        studies. Each accredited certificate is issued with a unique, tamper-proof serial number.</p>
+                    <p>By entering the serial number below, you can instantly confirm the validity of any ICVMS-issued
+                        certificate, ensuring credibility and adherence to our global standards.</p>
+                </div>
+                
+                <div class="certificate-verify-frm-wpr text-center content-xs">
+                    <h2 class="title-h5">Certificate Verification</h2>
+                    <p>Enter the 16-digit serial number found on your certificate.</p>
+                    <form class="certificate-verify-frm">
+                        <div class="input-wpr">
+                            <input type="text" placeholder="e.g., ICVMS-1234567890123456" name="" id="">
+                        </div>
+                        <div class="submit-wpr">
+                            <input type="submit" value="Verify Certificate">
+                        </div>
+                    </form>
                 </div>
 
-                <!-- Certificate Verification Box -->
-                <div class="col-md-6 mx-auto mt-4">
-                    <div class="verification-box p-4 shadow-sm rounded">
-                        <h3 class="text-center mb-3">Certificate Verification</h3>
-                        <p class="text-center small text-muted">Enter the 16-digit serial number found on your
-                            certificate.</p>
-                        <form>
-                            <input type="text" class="form-control mb-3" placeholder="e.g., ICVMS-1234567890123456">
-                            <button type="submit" class="btn btn-dark w-100">Verify Certificate</button>
-                        </form>
-                    </div>
-                    <div class="valid">
-                        <p>Enter your certificate serial number above to verify its authenticity</p>
-                    </div>
+                <div class="certificate-verify-helper-txt content-lg text-center">
+                    Enter your certificate serial number above to verify its authenticity.
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- footer section -->
-  <footer class="main_footer">
+        </section>
+        <!-- ==============  Section End ============== -->
+
+    </div>
+
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_details">
+            <div class="row footer-top-row">
+                <div class="col-lg-4">
+                    <div class="footer-cnt-social">
                         <p>The International Council for Vedic & Metaphysical Studies (ICVMS) is dedicated to setting
                             global...</p>
-                        <div class="icons mb-2">
-                       <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                       <i class="fa-brands fa-instagram" style="color: #f7f7f8;"></i>
-                       <i class="fa-brands fa-x-twitter" style="color: #f3f4f7;"></i>
+
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
 
+                <div class="col-lg-8">
+                    <div class="footer-menu-wpr">
+                        <div class="footer-menu">
+                            <div class="footer-title">Quick Links</div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Resources</div>
+                            <ul>
+                                <li><a href="#">Standards & Ethics</a></li>
+                                <li><a href="#">Directory</a></li>
+                                <li><a href="#">News & Updates</a></li>
+                                <li><a href="#">Trust Seal Verification</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <div class="footer-title">Legal</div>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Quick Links</p>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="accreditation.html">
-                            <li>Accreditation</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact US</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                   <ul class="quick_links">
-                        <p>Resources</p>
-                        <a href="standards.html">
-                            <li>Standards & Ethic</li>
-                        </a>
-                        <!-- <a href="directory.html">
-                            <li>Directory</li>
-                        </a> -->
-                        <a href="news.html">
-                            <li>News & Updates</li>
-                        </a>
-                        <a href="verify.html">
-                            <li>Trust Seal Verification</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Legal</p>
-                        <a href="privacy.html">
-                            <li>Privacy Policy</li>
-                        </a>
-                        <a href="terms.html">
-                            <li>Terms of Service</li>
-                        </a>
-                        
-                    </ul>
-                </div>
+
             </div>
+
+            <div class="footer-divider"></div>
         </div>
     </footer>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
+
+<!-- ====================== Js file ================== -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/swiper.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="assets/js/custom-js.js"></script>
 
 </html>

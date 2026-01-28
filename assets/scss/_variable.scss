@@ -32,6 +32,7 @@ $iphone-vs: "(max-width: 320px)";
 
   --heading-color: var(--primary-color);
   --content-color: #565d6d;
+  --content-dark-color: #171a1f;
   --sky-color: #fafafb;
   --border-color: #ced4da;
 
@@ -165,3 +166,4 @@ $iphone-vs: "(max-width: 320px)";
 .radius-sm {
   border-radius: 4px;
 }
+

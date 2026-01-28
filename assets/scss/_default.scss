@@ -87,7 +87,7 @@ h5,
 h6 {
     @include heading;
 
-    &:last-child{
+    &:last-child {
         margin-bottom: 0;
     }
 }
@@ -95,7 +95,7 @@ h6 {
 h1,
 .title-h1 {
     font-size: clamp(1.75rem, 1.083rem + 2.85vw, 4.5rem);
-font-weight: 700;
+    font-weight: 700;
 }
 
 
@@ -106,20 +106,24 @@ h2,
     // line-height: 60px;   
 }
 
-h3,.title-h3 {
+h3,
+.title-h3 {
     font-size: clamp(1.5rem, 1.348rem + 0.65vw, 2.125rem);
 }
 
-h4,.title-h4 {
+h4,
+.title-h4 {
     font-size: clamp(1.375rem, 1.284rem + 0.39vw, 1.75rem);
 }
 
-h5,.title-h5 {
+h5,
+.title-h5 {
     font-size: clamp(1.25rem, 1.189rem + 0.26vw, 1.5rem);
 }
 
-h6,.title-h6 {
-    font-size: clamp(1.125rem, 1.064rem + 0.26vw, 1.375rem) ;
+h6,
+.title-h6 {
+    font-size: clamp(1.125rem, 1.064rem + 0.26vw, 1.375rem);
 }
 
 
@@ -191,7 +195,7 @@ img {
     --bs-gutter-x: 40px;
 
     @media (min-width: 1200px) {
-       max-width: 1064px; 
+        max-width: 1064px;
     }
 
     @include tab-landscape {
@@ -201,7 +205,11 @@ img {
 
 .row {
     --bs-gutter-x: 32px;
-    
+
+    @include tab-portrait {
+        --bs-gutter-x: 22px;
+
+    }
 }
 
 
@@ -217,7 +225,9 @@ section {
         padding-top: 100px;
     }
 
-    @include mobile-lg { padding-top: 74px;}
+    @include mobile-lg {
+        padding-top: 74px;
+    }
 
 
 }
