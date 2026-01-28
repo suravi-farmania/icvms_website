@@ -37,6 +37,7 @@ body {
 a {
     text-decoration: none;
     outline: none;
+    transition: 0.3s all;
 
     &:hover {
         text-decoration: none;
@@ -102,8 +103,7 @@ h1,
 h2,
 .title-h2 {
     font-size: clamp(1.625rem, 1.291rem + 1.42vw, 3rem);
-    line-height: 1.15;
-    // line-height: 60px;   
+
 }
 
 h3,
@@ -201,7 +201,22 @@ img {
     @include tab-landscape {
         --bs-gutter-x: 32px;
     }
+
+
 }
+
+.container-lg {
+    --bs-gutter-x: 40px;
+
+    @media (min-width: 1200px) {
+        max-width: 1224px;
+    }
+
+    @include tab-landscape {
+        --bs-gutter-x: 32px;
+    }
+}
+
 
 .row {
     --bs-gutter-x: 32px;

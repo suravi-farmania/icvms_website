@@ -1,260 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<div id="header"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICVMS</title>
-    <!-- ====================== Css file ================== -->
-
-    <!--  Fonts  -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
-    <!-- third party CSS -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
-    <!-- custom CSS -->
-
-    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
-
-</head>
-
-<body id="body">
-
-    <!----------- header start ----------->
-
-    <header class="main-header">
-
-        <div class="container ">
-
-            <nav class="navbar d-flex">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-
-                <div class="menu-overlay" id="menu_overlay"></div>
-
-                <div class="collapse-menu" id="collapse_menu">
-
-                    <div class="responsive-logo">
-                        <a href="index.php">
-                            <img class="logo-desktop" src="images/logo.jpg" alt="logo">
-                        </a>
-                    </div>
-
-                    <div class="mobile-scroll">
-                        <div class="primary-nav ">
-                            <ul id="myUL" class="navbar-nav">
-
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about us</a></li>
-                                <li><a href="accreditation.html">accreditation</a></li>
-                                <li><a href="standards.html">standards and ethics</a></li>
-                                <li><a href="news.html">news & updates</a></li>
-                                <li><a href="join.html">join us</a></li>
-                                <li><a href="verify.html">verify trust seal</a></li>
-                                <li><a href="contact.html">contact us</a></li>
-
-                                <!-- <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);">businesses</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Business Link</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="single-article.php">single article</a></li>
-                                        <li><a href="#">Vitae in sit</a></li>
-                                        <li><a href="#">Ante pellentesque</a></li>
-                                    </ul>
-                                </li> -->
-
-
-                            </ul>
-                        </div>
-
-
-                        <!-- <div class="colapse-close" id="colapse_close">
-                            <img src="images/icon-xmark.svg" alt="">
-                        </div> -->
-
-
-                    </div>
-
-                </div>
-
-
-                <!-- <div class="header-search-icon">search <img src="images/icon-search-blue.svg" alt=""></div> -->
-
-                <div class="hamburger-menu" id="hamburger_menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-
-            </nav>
-
-        </div>
-
-    </header>
-    <!-- hero_section -->
-    <div class="main-wrapper">
-        <section class="contact-sec">
-            <div class="container">
-                <div class="sec-head text-center">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="row contact-row flex-row-reverse">
-
-                    <div class="col-md-6 ">
-                        <div class="contact-form-wpr">
-                            <h3 class="title-h5">Send Us a Message</h3>
-                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-
-                            <form action="" class="contact-form">
-                                <div class="input-wpr">
-                                    <label for="">Name</label>
-                                    <input type="text" placeholder="Your Full Name">
-                                </div>
-
-                                <div class="input-wpr">
-                                    <label for="">Email</label>
-                                    <input type="email" placeholder="Yourgmail@com">
-                                </div>
-
-                                <div class="input-wpr">
-                                    <label for="">Message</label>
-                                    <textarea placeholder="Type your message here"></textarea>
-                                </div>
-
-                                <div class="submit-wpr">
-                                    <input class="w-100" type="submit" value="Send Message">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 ">
-                        <div class="getin-touch-wpr">
-                            <h3 class="title-h5">Get in Touch</h3>
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <img src="images/icon-mail-outlined.svg">
-                                </div>
-                                <div>
-                                    <label class="content-xs" for="">Email</label>
-                                    <a href="mailto:contact@icvms.org">contact@icvms.org</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <img src="images/icon-phone-outlined.svg">
-                                </div>
-                                <div>
-                                    <label class="content-xs" for="">Phone</label>
-                                    <a href="tel:+11234567890">+1 (123) 456-7890</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <img src="images/icon-map-outlined.svg">
-                                </div>
-                                <div>
-                                    <label class="content-xs" for="">Address</label>
-                                    <p>123 Vedic Way, Mystical City, Global State, 90210</p>
-                                </div>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="contact-social">
-                                <h3 class="title-h5">Follow Us</h3>
-                                <ul>
-                                    <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a>
-                                    </li>
-                                    <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg"
-                                                alt=""></a>
-                                    </li>
-                                    <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-    </div>
-    <footer>
+<!-- hero_section -->
+<div class="main-wrapper">
+    <section class="contact-sec">
         <div class="container">
-            <div class="row footer-top-row">
-                <div class="col-lg-4">
-                    <div class="footer-cnt-social">
-                        <p>The International Council for Vedic & Metaphysical Studies (ICVMS) is dedicated to setting
-                            global...</p>
+            <div class="sec-head text-center">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row contact-row flex-row-reverse">
+                <div class="col-md-6 ">
+                    <div class="contact-form-wpr">
+                        <h3 class="title-h5">Send Us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
 
-                        <div class="footer-social">
+                        <form action="" class="contact-form">
+                            <div class="input-wpr">
+                                <label for="">Name</label>
+                                <input type="text" placeholder="Your Full Name">
+                            </div>
+
+                            <div class="input-wpr">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Yourgmail@com">
+                            </div>
+
+                            <div class="input-wpr">
+                                <label for="">Message</label>
+                                <textarea placeholder="Type your message here"></textarea>
+                            </div>
+
+                            <div class="submit-wpr">
+                                <input class="w-100" type="submit" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+                    <div class="getin-touch-wpr">
+                        <h3 class="title-h5">Get in Touch</h3>
+                        <div class="contact-info">
+                            <div class="contact-info-icon">
+                                <img src="images/icon-mail-outlined.svg">
+                            </div>
+                            <div>
+                                <label class="content-xs" for="">Email</label>
+                                <a href="mailto:contact@icvms.org">contact@icvms.org</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="contact-info-icon">
+                                <img src="images/icon-phone-outlined.svg">
+                            </div>
+                            <div>
+                                <label class="content-xs" for="">Phone</label>
+                                <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="contact-info-icon">
+                                <img src="images/icon-map-outlined.svg">
+                            </div>
+                            <div>
+                                <label class="content-xs" for="">Address</label>
+                                <p>123 Vedic Way, Mystical City, Global State, 90210</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-social">
+                            <h3 class="title-h5">Follow Us</h3>
                             <ul>
-                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a>
+                                </li>
                                 <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
                                 </li>
-                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-8">
-                    <div class="footer-menu-wpr">
-                        <div class="footer-menu">
-                            <div class="footer-title">Quick Links</div>
-                            <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Accreditation</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-menu">
-                            <div class="footer-title">Resources</div>
-                            <ul>
-                                <li><a href="#">Standards & Ethics</a></li>
-                                <li><a href="#">Directory</a></li>
-                                <li><a href="#">News & Updates</a></li>
-                                <li><a href="#">Trust Seal Verification</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-menu">
-                            <div class="footer-title">Legal</div>
-                            <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of Service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
-            <div class="footer-divider"></div>
         </div>
-    </footer>
+    </section>
+</div>
 
 
-    <!-- ====================== Js file ================== -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/swiper.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
-    <script type="text/javascript" src="assets/js/custom-js.js"></script>
-</body>
+<div id="footer"></div>
 
-</html>
+
+<script>
+    // delete before production
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+
+    // delete before production
+
+</script>

@@ -1,4 +1,6 @@
 
+
+
 // ====== Hamburger Menu Click Js ====== //
 
 const hamburger = document.getElementById("hamburger_menu"); 
@@ -75,7 +77,7 @@ header_Srch_close.onclick=()=>{
 
 
 
-/// ================= Home Page Game Library Slider
+/// ================= sample swiper script
 
 var doorsteploan = new Swiper('#doorstep-loan-slider', {
 
