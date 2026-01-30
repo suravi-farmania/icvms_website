@@ -1,6 +1,5 @@
 
 
-
 // ====== Hamburger Menu Click Js ====== //
 
 const hamburger = document.getElementById("hamburger_menu"); 
