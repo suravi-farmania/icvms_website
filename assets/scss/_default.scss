@@ -234,14 +234,14 @@ section {
 }
 
 .main-wrapper {
-    padding-top: 120px;
+    padding-top: 100px;
 
     @include tab-landscape {
         padding-top: 100px;
     }
 
     @include mobile-lg {
-        padding-top: 74px;
+        padding-top: 78px;
     }
 
 
