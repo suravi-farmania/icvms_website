@@ -2180,6 +2180,16 @@ footer {
 .certificate-verify-frm-wpr:not(:first-child) {
   margin-top: 46px;
 }
+@media all and (max-width: 991px) {
+  .certificate-verify-frm-wpr:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+@media all and (max-width: 575px) {
+  .certificate-verify-frm-wpr:not(:first-child) {
+    margin-top: 26px;
+  }
+}
 .certificate-verify-frm-wpr h2 {
   margin-bottom: 5px;
 }

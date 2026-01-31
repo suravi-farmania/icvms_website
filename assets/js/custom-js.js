@@ -2,8 +2,8 @@
 
 // ====== Hamburger Menu Click Js ====== //
 
-const hamburger = document.getElementById("hamburger_menu"); 
-hamburger.addEventListener('click', function() { 
+const hamburger = document.getElementById("hamburger_menu");
+hamburger.addEventListener('click', function () {
     var element1 = document.getElementById("collapse_menu");
     var element2 = document.getElementById("menu_overlay");
     var element3 = document.getElementById("body");
@@ -14,8 +14,8 @@ hamburger.addEventListener('click', function() {
 
 // ====== Menu Overlay Click Js ====== //
 
-const menuoverlay = document.getElementById("menu_overlay"); 
-menuoverlay.addEventListener('click', function() { 
+const menuoverlay = document.getElementById("menu_overlay");
+menuoverlay.addEventListener('click', function () {
     var element4 = document.getElementById("collapse_menu");
     var element5 = document.getElementById("menu_overlay");
     var element6 = document.getElementById("body");
@@ -26,8 +26,8 @@ menuoverlay.addEventListener('click', function() {
 
 // ====== Menu Close Click Js ====== //
 
-const menuclose = document.getElementById("colapse_close"); 
-menuclose.addEventListener('click', function() { 
+const menuclose = document.getElementById("colapse_close");
+menuclose.addEventListener('click', function () {
     var element7 = document.getElementById("collapse_menu");
     var element8 = document.getElementById("menu_overlay");
     var element9 = document.getElementById("body");
@@ -47,14 +47,14 @@ const main_Header_Height = main_Header.offsetHeight
 const add_class_on_scroll = () => main_Header.classList.add("dark");
 const remove_class_on_scroll = () => main_Header.classList.remove("dark");
 
-window.addEventListener('scroll', function() { 
+window.addEventListener('scroll', function () {
     // scrollpos = window.scrollY;
 
     if (window.scrollY >= main_Header_Height) { add_class_on_scroll() }
     else { remove_class_on_scroll() }
 
     // console.log(scrollpos)
-    
+
 })
 
 
@@ -63,15 +63,18 @@ window.addEventListener('scroll', function() {
 let header_SearchEl = document.querySelector(".header-search-icon");
 let header_Srch_Frm = document.querySelector(".header-srch-wpr");
 let header_Srch_close = document.querySelector(".header-srch-close");
-console.log(header_Srch_Frm);
-
-header_SearchEl.onclick=()=>{
-    header_Srch_Frm.classList.add("open");
+if (header_SearchEl) {
+    header_SearchEl.onclick = () => {
+        header_Srch_Frm.classList.add("open");
+    }
 }
 
-header_Srch_close.onclick=()=>{
-    header_Srch_Frm.classList.remove("open");
+if (header_Srch_close) {
+    header_Srch_close.onclick = () => {
+        header_Srch_Frm.classList.remove("open");
+    }
 }
+
 
 
 
