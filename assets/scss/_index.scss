@@ -40,6 +40,14 @@
 .hero-img {
     border-radius: var(--radius);
     overflow: hidden;
+
+    img {
+
+        @include tab-portrait {
+            aspect-ratio: 1/0.5;
+            object-fit: cover;
+        }
+    }
 }
 
 .pillar-card-row {
@@ -72,19 +80,56 @@
             margin: 0 auto;
         }
     }
-    
+
+}
+@keyframes scroll {
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+.spl-heading-text {
+    padding: 40px 0;
+    h2 {
+        animation: scroll 30s infinite linear;
+        margin-left: -15%;
+
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
 }
 
-.cta-sec {
-    background: var(--primary-color);
-}
-
-.hm-abt-row{
+.hm-abt-row {
     align-items: center;
 }
 
-.abt-cont{
-    h2{
-        margin-bottom: 12px;
+.hm-abt-heading {
+    h2 {
+        margin-bottom: 22px;
+        margin-top: -8px;
     }
+}
+
+.hm-abt-para {
+    border-left: 1px solid var(--border-color);
+    padding-left: 30px;
+
+    @include tab-portrait {
+        padding-left: 20px;
+    }
+}
+
+.hm-missn-head {
+    p {
+        margin-bottom: 2.5em;
+
+        @include tab-portrait {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.hm-mission-row {
+    --bs-gutter-y: 32px;
 }
