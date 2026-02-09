@@ -41,8 +41,8 @@ $iphone-vs: "(max-width: 320px)";
   --black-color: #000000;
   --gradiant-bg: linear-gradient(90deg, #f2f6fd 0%, #fff9e6 100%);
   // Others Variable
-  --box-shadow: 0px 0px 1px #171a1f0d, 0px 0px 2px #171a1f14;
-
+  --box-shadow:0px 0px 1px #171a1f0d, 0px 0px 2px #171a1f14;
+  --box-shadow-lg: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   // radius Variable
   --radius-lg: 20px;
   --radius-md: 16px;
