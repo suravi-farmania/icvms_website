@@ -18,10 +18,10 @@ $iphone-vs: "(max-width: 320px)";
 
 :root {
 
-  --primary-color-dark: #8D8576;
-  --input-bg: rgba(219, 219, 219, 0.14);
-  --page-bg: #ffffff;
-  --card-bg: #e9e9e9;
+  // --primary-color-dark: #8D8576;
+  // --input-bg: rgba(219, 219, 219, 0.14);
+  // --page-bg: #ffffff;
+  // --card-bg: #e9e9e9;
 
 
   // ============ Color Variable ============ // 
@@ -35,11 +35,11 @@ $iphone-vs: "(max-width: 320px)";
   --content-dark-color: #171a1f;
   --sky-color: #fafafb;
   --border-color: #ced4da;
-  --border2-color:  #dee1e6;
+  --border2-color: #dee1e6;
 
   --white-color: #ffffff;
   --black-color: #000000;
-
+  --gradiant-bg: linear-gradient(90deg, #f2f6fd 0%, #fff9e6 100%);
   // Others Variable
   --box-shadow: 0px 0px 1px #171a1f0d, 0px 0px 2px #171a1f14;
 
@@ -55,126 +55,4 @@ $iphone-vs: "(max-width: 320px)";
 
   --heading-font: var(--primary-font);
   --content-font: var(--secondary-font);
-}
-
-/* Color bindings */
-.primary-bg {
-  background: var(--primary-color);
-}
-
-.primary-light-bg {
-  background: var(--primary-light-color);
-}
-
-.secondary-bg {
-  background: var(--secondary-color);
-}
-
-.secondary-light-bg {
-  background: var(--secondary-color-light);
-}
-
-.sky-bg {
-  background: var(--sky-color);
-}
-
-.white-bg {
-  background: var(--white-color);
-}
-
-.black-bg {
-  background: var(--black-color);
-}
-
-.primary-color {
-  color: var(--primary-color);
-}
-
-.primary-light-color {
-  color: var(--primary-light-color);
-}
-
-.secondary-color {
-  color: var(--secondary-color);
-}
-
-.secondary-light-color {
-  color: var(--secondary-color-light);
-}
-
-.sky-color {
-  color: var(--sky-color);
-}
-
-.heading-color {
-  color: var(--heading-color);
-}
-
-.content-color {
-  color: var(--content-color);
-}
-
-.content-dark-color {
-  color: var(--content-dark-color);
-}
-
-.border {
-  border: 1px solid var(--border-color) !important;
-}
-
-.border-color {
-  border-color: var(--border-color) !important;
-}
-
-.border2-color {
-  border-color: var(--border2-color) !important;
-}
-
-.white-color {
-  color: var(--white-color);
-}
-
-.black-color {
-  color: var(--black-color);
-}
-
-.content-xl {
-  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
-}
-
-.content-lg {
-  font-size: clamp(1.125rem, 1.095rem + 0.13vw, 1.25rem);
-}
-
-.content-md {
-  font-size: clamp(1rem, 0.97rem + 0.13vw, 1.125rem);
-}
-
-.content-sm {
-  font-size: 1rem;
-}
-
-.content-xs {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.box-shadow {
-  box-shadow: var(--box-shadow);
-}
-
-.radius {
-  border-radius: 6px;
-}
-
-.radius-lg {
-  border-radius: 20px;
-}
-
-.radius-md {
-  border-radius: 16px;
-}
-
-.radius-sm {
-  border-radius: 4px;
 }

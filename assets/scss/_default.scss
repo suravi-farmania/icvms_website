@@ -142,6 +142,10 @@ p {
             text-decoration: underline;
         }
     }
+
+    strong{
+        color: var(--content-dark-color);
+    }
 }
 
 
@@ -246,9 +250,6 @@ section {
 
 
 }
-
-
-
 
 
 img.alignright {
