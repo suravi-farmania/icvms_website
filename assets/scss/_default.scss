@@ -12,6 +12,7 @@ html {
     // -webkit-overflow-scrolling: touch;
 }
 
+
 body {
     overflow-x: hidden;
     height: 100%;
@@ -145,6 +146,7 @@ p {
 
     strong{
         color: var(--content-dark-color);
+        font-weight: 500;
     }
 }
 
@@ -239,6 +241,7 @@ section {
 
 .main-wrapper {
     padding-top: 100px;
+    overflow-x: hidden;
 
     @include tab-landscape {
         padding-top: 100px;

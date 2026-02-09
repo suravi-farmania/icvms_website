@@ -1,3 +1,4 @@
+AOS.init();
 
 
 // ====== Hamburger Menu Click Js ====== //
