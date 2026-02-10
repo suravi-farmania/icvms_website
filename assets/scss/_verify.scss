@@ -1,4 +1,13 @@
 .trust-verify-cont {
+    margin-bottom: 40px;
+
+    @include tab-portrait{
+        margin-bottom: 30px;
+    }
+
+    @include mobile-lg{
+        margin-bottom: 26px;
+    }
     h1 {
         margin-bottom: 0.55em;
 
@@ -17,21 +26,7 @@
     padding: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
     max-width: 576px;
     margin: 0 auto clamp(1rem, 0.636rem + 1.82vw, 2rem);
-    background: white;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--box-shadow);
-
-    &:not(:first-child) {
-        margin-top: 46px;
-
-        @include tab-portrait{
-            margin-top: 30px;
-        }
-
-          @include mobile-lg{
-            margin-top: 26px;
-        }
-    }
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     h2 {
         margin-bottom: 5px;
@@ -44,31 +39,14 @@
 
 .certificate-verify-frm {
     .input-wpr {
-        margin-bottom: clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem);
+        margin-bottom: 15px;
+        input{
+            text-align: center;
+        }
     }
 
     input[type="submit"] {
         width: 100%;
         font-weight: 600;
     }
-}
-
-.certificate-verify-helper-txt {
-    max-width: 680px;
-    padding:14px 18px;
-    background: var(--primary-light-color);
-    border-radius: var(--radius-sm);
-    border: 1px solid #BFDBFEFF;
-    font-family: var(--primary-font);
-    color: var(--content-dark-color);
-    margin: 0 auto;
-
-    @include tab-portrait {
-        font-size: 16px;
-    }
-
-    @include mobile-lg {
-        padding: 12px;
-    }
-
 }

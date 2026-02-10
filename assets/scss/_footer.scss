@@ -1,6 +1,6 @@
 footer {
     background: linear-gradient(90deg, #08152CFF 0%, #C39900FF 100%);
-    padding: 48px 0;
+    padding: 48px 0 0;
 }
 
 .footer-top-row {
@@ -125,4 +125,22 @@ footer {
 .footer-divider {
     margin-top: 42px;
     border-bottom: 1px solid #ffffffcc;
+}
+
+.footer-copyright{
+    color: white;
+    text-align: center;
+padding: 20px 0;
+p{
+    @include tab-portrait{
+        font-size: 14px;
+    }
+}
+    a{
+        color: inherit;
+        &:hover{
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
 }
