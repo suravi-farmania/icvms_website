@@ -766,7 +766,7 @@ input[type=radio]:checked + label:after {
     text-align: left;
   }
 }
-.primary-nav ul li:hover a {
+.primary-nav ul li:hover a, .primary-nav ul li.current-menu a {
   color: var(--secondary-color);
 }
 .primary-nav ul li:first-child {
@@ -1507,6 +1507,9 @@ footer {
 .footer-menu-wpr .footer-menu ul li:last-child {
   margin-bottom: 0;
 }
+.footer-menu-wpr .footer-menu ul li.current-menu {
+  text-decoration: underline;
+}
 .footer-menu-wpr .footer-menu ul li a {
   color: inherit;
 }
@@ -1945,6 +1948,10 @@ footer {
 }
 .cta-sec .cta-content .btn-primary {
   border: 1px solid var(--white-color);
+}
+.cta-sec .cta-content .btn-secondary:hover {
+  border-color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .accordion {
