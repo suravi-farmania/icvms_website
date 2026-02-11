@@ -106,6 +106,10 @@
     align-items: center;
     margin-bottom: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
 
+    &:last-child{
+        margin-bottom: 0;
+    }
+
     &.flex-row-reverse {
         .hm-abt-para {
             border-right: 1px solid var(--border-color);

@@ -1,6 +1,6 @@
 footer {
     background: linear-gradient(90deg, #08152CFF 0%, #C39900FF 100%);
-    padding: 48px 0;
+    padding: 48px 0 0;
 }
 
 .footer-top-row {
@@ -67,24 +67,24 @@ footer {
     justify-content: flex-end;
     gap: 16px;
 
-    @include tab-portrait{
+    @include tab-portrait {
         justify-content: space-between;
     }
 
-    @include mobile-lg{
+    @include mobile-lg {
         justify-content: space-between;
-        gap: 20px; 
+        gap: 20px;
     }
 
     .footer-menu {
         color: var(--white-color);
         min-width: 184px;
 
-        @include tab-portrait{
+        @include tab-portrait {
             min-width: 100px;
         }
 
-       
+
 
         .footer-title {
             font-weight: 600;
@@ -109,6 +109,9 @@ footer {
                 &:last-child {
                     margin-bottom: 0;
                 }
+                &.current-menu {
+                        text-decoration: underline;
+                    }
 
                 a {
                     color: inherit;
@@ -125,4 +128,25 @@ footer {
 .footer-divider {
     margin-top: 42px;
     border-bottom: 1px solid #ffffffcc;
+}
+
+.footer-copyright {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    p {
+        @include tab-portrait {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
 }

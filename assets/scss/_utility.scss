@@ -70,6 +70,14 @@
 .border2-color {
     border-color: var(--border2-color) !important;
 }
+.border-primary {
+    border: 1px solid var(--primary-color) !important;
+}
+
+.border-secondary {
+    border-color: var(--secondary-color) !important;
+}
+
 
 .white-color {
     color: var(--white-color);
@@ -77,6 +85,10 @@
 
 .black-color {
     color: var(--black-color);
+}
+
+.gradiant-bg{
+    background: var(--gradiant-bg);
 }
 
 .content-xl {
@@ -126,7 +138,9 @@
 }
 
 // elelements (small components)
-
+.lists{
+    @include lists;
+}
 .icon-lg {
     width: 48px;
     height: 48px;

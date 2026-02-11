@@ -1,618 +1,660 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICVMS</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <!-- ====================== Css file ================== -->
+    <!--  Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- third party CSS -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
 
-    <title></title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/ICVMS Logo - Revised (1).jpg" alt=""
-                        height="80" width="80"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active " href="accreditation.html" id="navbarDropdown" role="button"
-                                aria-expanded="false">
-                                Accreditation
-                            </a>
+<body id="body">
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="standards.html">Standards and Ethics </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="directory.html">Directory</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="news.html">News & Updates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="join.html">Join Us</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="verify.html">Verify Trust Seal</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact Us</a>
-                        </li>
+    <!----------- header start ----------->
+    <header class="main-header">
 
-                    </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
+        <div class="container ">
+
+            <nav class="navbar d-flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-light.svg" alt="logo">
+                </a>
+
+                <div class="menu-overlay" id="menu_overlay"></div>
+
+                <div class="collapse-menu" id="collapse_menu">
+
+                    <div class="responsive-logo">
+                        <a href="index.php">
+                            <img class="logo-desktop" src="images/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="mobile-scroll">
+                        <div class="primary-nav ">
+                            <ul id="myUL" class="navbar-nav">
+
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li class="current-menu"><a href="accreditation.html">accreditation</a></li>
+                                <li><a href="standards.html">standards and ethics</a></li>
+                                <li><a href="news.html">news & updates</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="verify.html">verify trust seal</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+
+                                <!-- <li class="menu-item-has-children">
+                                    <a href="javascript:void(0);">businesses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Business Link</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="single-article.php">single article</a></li>
+                                        <li><a href="#">Vitae in sit</a></li>
+                                        <li><a href="#">Ante pellentesque</a></li>
+                                    </ul>
+                                </li> -->
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="colapse-close" id="colapse_close">
+                            <img src="images/icon-xmark.svg" alt="">
+                        </div>
+
+
+                    </div>
+
                 </div>
-            </div>
-        </nav>
+
+
+
+                <div class="hamburger-menu" id="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </nav>
+
+        </div>
+
     </header>
-    <!-- hero_section -->
+    <!----------- header End ----------->
 
-    <section class="acc_hero_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="head_details">
-                        <h3>Become a Trusted Leader in Vedic and Metaphysical Sciences</h3>
-                        <p>Achieve global recognition through ICVMS accreditation, showcasing your commitment to
-                            excellence, ethics, and authenticity in teaching and practicing metaphysical disciplines.
-                        </p>
-                    </div>
-                    <div class="button_link">
-                        <a href="join.html"><button class="accredition_button">Start Your Application</button></a>
-                        <a href="#"><button class="verify_button mt-2">Download Accreditation Guide</button></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image_acc">
-                        <img src="images/certificate.jpg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="individual">
-        <div class="head text-center">
-            <h3>Individual Accreditation</h3>
-            <p>
-                For individual practitioners and scholars, ICVMS certification is a mark of professional credibility and
-                mastery in their respective fields, recognized globally as a standard of excellence.
-            </p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="content">
-
-                        <!-- Who Can Apply Section -->
-                        <div class="who_can_apply mb-4 col-12">
-
-
-                            <div class="card" style="width: 100%;">
-                                <div class="card-header">
-                                    <h4 class="text-center">ICVMS welcomes</h4>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><b>Individual Practitioners:</b> Certified teachers or
-                                        practitioners in disciplines
-                                        like Astrology, Reiki, Vastu, Tarot, Numerology, or other metaphysical fields
-                                        with
-                                        at
-                                        least 2 years of professional experience.</li>
-                                    <li class="list-group-item"><b>Training Institutions:</b> Schools, academies, or
-                                        organizations offering courses
-                                        in Vedic or metaphysical sciences, with a structured curriculum and qualified
-                                        instructors.</li>
-
-                                </ul>
+    <!----------- main wrapper start ----------->
+    <div class="main-wrapper">
+        <section class="accreditation-hero-sec secondary-light-bg">
+            <div class="container-lg">
+                <div class="row row-gap-y align-items-center">
+                    <div class="col-lg-6">
+                        <div class="accreditation-hero-cont text-center text-lg-start">
+                            <h1 class="mb-1">Become a Trusted Leader in Vedic and Metaphysical Sciences</h1>
+                            <p>Achieve global recognition through ICVMS accreditation, showcasing your commitment to
+                                excellence, ethics, and authenticity in teaching and practicing metaphysical
+                                disciplines.</p>
+                            <div class="btn-grp justify-content-center justify-content-lg-start">
+                                <a href="join.html" class="btn btn-primary ">Start Your Application</a>
+                                <a href="images/logo-light.svg" download class="btn btn-outline">Download Accreditation Guide</a>
                             </div>
                         </div>
-                        <!-- End Who Can Apply Section -->
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="accreditation-hero-img box-shadow-lg">
+                            <img src="images/icvms-certificate.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <!-- Eligibility Requirements -->
+        <section class="individual-accreditation-sec">
+            <div class="container-lg">
+                <div class="sec-head text-center">
+                    <h2>Individual Accreditation</h2>
+                    <p>For individual practitioners and scholars, ICVMS certification is a mark of professional
+                        credibility and mastery in their respective fields, recognized globally as a standard of
+                        excellence.</p>
+                </div>
 
-
-                        <div class="card" style="width:100%;">
-                            <div class="card-header">
-                                <h4 class="text-center">Eligibility Requirements</h4>
+                <div class="row row-gap-y">
+                    <div class="col-lg-6">
+                        <div class="row row-gap-y">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="accreditation-proces-info border radius-md overflow-hidden">
+                                    <div class="primary-bg  text-center card-padding py-3">
+                                        <h3 class="title-h6 text-white">ICVMS welcomes</h3>
+                                    </div>
+                                    <div class="card-padding">
+                                        <ul class="lists">
+                                            <li class="d-flex gap-3 mb-3">
+                                                <figure class="icon-md">
+                                                    <img src="images/icon-users.svg" alt="">
+                                                </figure>
+                                                <p><strong>Individual Practitioners:</strong> Certified teachers or
+                                                    practitioners in disciplines like Astrology, Reiki, Vastu, Tarot,
+                                                    Numerology, or other metaphysical fields with at least 2 years of
+                                                    professional experience.
+                                                </p>
+                                            </li>
+                                            <li class="d-flex gap-3">
+                                                <figure class="icon-md">
+                                                    <img src="images/icon-bookopen.svg" alt="">
+                                                </figure>
+                                                <p><strong>Training Institutions:</strong> Schools, academies, or
+                                                    organizations
+                                                    offering courses in Vedic or metaphysical sciences, with a
+                                                    structured
+                                                    curriculum and qualified instructors.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><b>1.</b> Commitment to ICVMS’s Code of Ethics</li>
-                                <li class="list-group-item"><b>2.</b> Demonstrated expertise through certifications,
-                                    testimonials, or documented
-                                    experience.</li>
-                                <li class="list-group-item"><b>3.</b> For institutions: A detailed curriculum, qualified
-                                    faculty,<br> and evidence
-                                    of student outcomes</li>
-                                <li class="list-group-item"><b>4.</b> Willingness to undergo periodic reviews to
-                                    maintain <br> accreditation status</li>
+                            <div class="col-md-6 col-lg-12">
+                                <div class="accreditation-proces-info border radius-md overflow-hidden">
+                                    <div class="primary-bg  text-center card-padding py-3">
+                                        <h3 class="title-h6 text-white">Eligibility Requirements</h3>
+                                    </div>
+                                    <div class="card-padding">
+                                        <ul class="lists">
+                                            <li class="d-flex gap-3 mb-2 align-items-center">
+                                                <figure
+                                                    class="icon-with-bg-md secondary-light-bg secondary-color fw-medium">
+                                                    1
+                                                </figure>
+                                                <p>Commitment to ICVMS’s Code of Ethics</p>
+                                            </li>
 
+                                            <li class="d-flex gap-3 mb-2 align-items-center">
+                                                <figure
+                                                    class="icon-with-bg-md secondary-light-bg secondary-color fw-medium">
+                                                    2
+                                                </figure>
+                                                <p>Demonstrated expertise through certifications, testimonials, or
+                                                    documented
+                                                    experience.</p>
+                                            </li>
+
+                                            <li class="d-flex gap-3 mb-2 align-items-center">
+                                                <figure
+                                                    class="icon-with-bg-md secondary-light-bg secondary-color fw-medium">
+                                                    3
+                                                </figure>
+                                                <p>For institutions: A detailed curriculum, qualified faculty,
+                                                    and evidence of student outcomes</p>
+                                            </li>
+                                            <li class="d-flex gap-3 align-items-center">
+                                                <figure
+                                                    class="icon-with-bg-md secondary-light-bg secondary-color fw-medium">
+                                                    4
+                                                </figure>
+                                                <p>Willingness to undergo periodic reviews to maintain
+                                                    accreditation status</p>
+                                            </li>
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accreditation-proces-view-wpr">
+                            <h3 class="mb-3">Process Overview</h3>
+                            <div class="accreditation-proces-view">
+                                <figure class="accreditation-proces-icon icon-with-bg-lg primary-bg">
+                                    <img src="images/icon-submit.svg" alt="">
+                                    <div class="accreditation-proces-line"></div>
+                                </figure>
+
+                                <div class="border radius card-padding-sm box-shadow">
+                                    <h4 class="content-md mb-2"><span class="secondary-color">1.</span> Submit
+                                        Application</h4>
+                                    <p class="content-xs">Complete the online application form, providing details about
+                                        your qualifications, experience, and (for institutions) curriculum. Include
+                                        supporting documents like certifications, syllabi, or client testimonials.</p>
+                                </div>
+                            </div>
+
+                            <div class="accreditation-proces-view">
+                                <figure class="accreditation-proces-icon icon-with-bg-lg primary-bg">
+                                    <div class="accreditation-proces-line"></div>
+                                    <img src="images/icon-review.svg" alt="">
+                                </figure>
+
+                                <div class="border radius card-padding-sm box-shadow">
+                                    <h4 class="content-md mb-2"><span class="secondary-color">2.</span> Review by ICVMS
+                                        Panel
+                                    </h4>
+                                    <p class="content-xs">Our expert accreditors, including field specialists and ethics
+                                        advisors, evaluate your application against our standards for quality, ethics,
+                                        and impact.</p>
+                                </div>
+                            </div>
+
+                            <div class="accreditation-proces-view">
+                                <figure class="accreditation-proces-icon icon-with-bg-lg primary-bg">
+                                    <div class="accreditation-proces-line"></div>
+                                    <img src="images/icon-interview.svg" alt="">
+                                </figure>
+
+                                <div class="border radius card-padding-sm box-shadow">
+                                    <h4 class="content-md mb-2"><span class="secondary-color">3.</span> Interview or
+                                        Audit</h4>
+                                    <p class="content-xs">Depending on the application type, we may conduct a virtual
+                                        interview (for individuals) or an audit of teaching practices (for
+                                        institutions).</p>
+                                </div>
+                            </div>
+
+                            <div class="accreditation-proces-view">
+                                <figure class="accreditation-proces-icon icon-with-bg-lg primary-bg">
+                                    <div class="accreditation-proces-line"></div>
+                                    <img src="images/icon-feedback.svg" alt="">
+                                </figure>
+
+                                <div class="border radius card-padding-sm box-shadow">
+                                    <h4 class="content-md mb-2"><span class="secondary-color">4.</span> Decision and
+                                        Feedback</h4>
+                                    <p class="content-xs">Receive a decision within 4–6 weeks. Approved applicants are
+                                        awarded accreditation; others receive constructive feedback for improvement.</p>
+                                </div>
+                            </div>
+
+                            <div class="accreditation-proces-view">
+                                <figure class="accreditation-proces-icon icon-with-bg-lg primary-bg">
+                                    <img src="images/icon-ongoing.svg" alt="">
+                                </figure>
+
+                                <div class="border radius card-padding-sm box-shadow">
+                                    <h4 class="content-md mb-2"><span class="secondary-color">5.</span> Ongoing
+                                        Compliance</h4>
+                                    <p class="content-xs">Accredited members must renew every 2 years, submitting
+                                        updates on their practice or curriculum to maintain standards.</p>
+                                </div>
+                            </div>
+
+                            <div class="accreditation-proces-btn-wpr">
+                                <a href="#" class="btn btn-primary mt-3 ">Apply Now for Institutional Accreditation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-accreditation-sec gradiant-bg">
+            <div class="container-lg">
+                <div class="sec-head text-center">
+                    <h2>Benefits of Accreditation</h2>
+                    <p>Becoming accredited with ICVMS unlocks opportunities and builds lasting trust</p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-gap-y">
+                    <div class="col">
+                        <div
+                            class="border box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 bg-white ">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-recognition-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Global Recognition
+                                </h3>
+
+                                <p>Feature the ICVMS accreditation seal on your website, certificates, and marketing
+                                    materials.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div
+                            class="border box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 bg-white">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-listing-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Directory Listing</h3>
+
+                                <p>Gain visibility through our searchable global directory of accredited practitioners
+                                    and institutions.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div
+                            class="border box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 bg-white">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-professional-development-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Professional Development
+                                </h3>
+
+                                <p>Access exclusive webinars, workshops, and resources to enhance your skills and stay
+                                    updated.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="border box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 bg-white">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-community-support-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Community Support</h3>
+                                <p>Collaborate with a network of ethical professionals and contribute to global
+                                    initiatives in metaphysical sciences.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div
+                            class="border box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 bg-white">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-review.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Client Trust</h3>
+                                <p>Attract more students or clients who value verified credentials and ethical
+                                    standards.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-accreditation-sec">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <h2>Code of Ethics
+                    </h2>
+                    <p>Our accreditation is rooted in a strict Code of Ethics, ensuring that all members uphold</p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2  row-gap-y">
+                    <div class="col">
+                        <div class="box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 gradiant-bg">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-integrity-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Integrity</h3>
+
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 gradiant-bg">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-respect-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Respect</h3>
+
+                                <p>With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 gradiant-bg">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-responsibility-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Responsibility
+                                </h3>
+
+                                <p>Commitment to non-harmful, ethical practices that prioritize client well-being</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 gradiant-bg">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-transparency-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Transparency</h3>
+                                <p>Clear communication about methods, fees, and limitations of services</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="box-shadow card-padding d-flex flex-column gap-lg-4 gap-3 radius h-100 gradiant-bg">
+                            <div class="icon-with-bg-lg primary-bg">
+                                <img src="images/icon-featured-solid.svg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="title-h6 mb-2 fw-bold">Featured</h3>
+                                <p>Dedication to ongoing education and professional growth.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="accreditation-tiers-sec secondary-light-bg">
+            <div class="container">
+                <div class="sec-head text-center mb-40">
+                    <h2>Accreditation Tiers</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div
+                            class="accreditation-proces-info border border-secondary radius-md overflow-hidden mb-4 bg-white">
+                            <div class="primary-bg  text-center card-padding py-3 ">
+                                <h3 class="title-h6 text-white">ICVMS offers
+                                </h3>
+                            </div>
+
+                            <ul class="lists">
+                                <li class="d-flex gap-3 border-bottom card-padding-sm">
+                                    <figure class="icon-with-bg-md secondary-light-bg">
+                                        <img src="images/icon-users.svg" alt="">
+                                    </figure>
+                                    <div>
+                                        <h4 class="title-h6 mb-2">Individual Practitioner Accreditation</h4>
+                                        <p>For solo practitioners or independent teachers. Ideal for those offering
+                                            consultations or small-scale training</p>
+                                    </div>
+
+                                </li>
+                                <li class="d-flex gap-3 border-bottom card-padding-sm">
+                                    <figure class="icon-with-bg-md secondary-light-bg">
+                                        <img src="images/icon-institutional.svg" alt="">
+                                    </figure>
+                                    <div>
+                                        <h4 class="title-h6 mb-2">Institutional Accreditation</h4>
+                                        <p>For schools or academies with structured programs, multiple instructors,
+                                            or online courses</p>
+                                    </div>
+
+                                </li>
+
+                                <li class="d-flex gap-3 card-padding-sm">
+                                    <figure class="icon-with-bg-md secondary-light-bg">
+                                        <img src="images/icon-advanced.svg" alt="">
+                                    </figure>
+                                    <div>
+                                        <h4 class="title-h6 mb-2">Advanced Accreditation</h4>
+                                        <p>For practitioners or institutions with over 5 years of impactful
+                                            contributions, eligible for leadership roles in ICVMS initiatives. Each
+                                            tier includes a digital badge, directory listing, and access to ICVMS
+                                            resources, with varying levels of recognition and responsibilities</p>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-sec primary-bg">
+            <div class="container">
+
+                <div class="cta-content textr-white text-center">
+                    <h2 class="text-white">Get Started Today
+                    </h2>
+                    <p>
+                        Ready to elevate your practice or institution with ICVMS accreditation? Join a global community
+                        committed to excellence and ethics in Vedic and metaphysical sciences
+
+
+                    </p>
+
+                    <div class="btn-grp justify-content-center">
+                        <a href="accreditation.html" class="btn btn-secondary">Start Application</a>
+                        <a href="standards.html" class="btn btn-outline">Download Application Guide</a>
+                        <a href="standards.html" class="btn btn-outline">Schedule a Consultation</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="sec-head mb-40 text-center">
+                    <h2>Verify Your ICVMS Trust Seal</h2>
+                </div>
+                <div class="certificate-verify-frm-wpr text-center content-xs secondary-light-bg border border-secondary radius-md">
+                    <div class="icon-with-bg-lg primary-bg mx-auto mb-3">
+                        <img src="images/icon-certificate.svg" alt="">
+                    </div>
+                    <h2 class="title-h5">Certificate Verification</h2>
+                    <p>Enter the 16-digit serial number found on your certificate.</p>
+                    <form class="certificate-verify-frm">
+                        <div class="input-wpr">
+                            <input type="text" placeholder="e.g., ICVMS-1234567890123456">
+                        </div>
+                        <div class="submit-wpr">
+                            <input type="submit" value="Verify Now">
+                        </div>
+                    </form>
+                    <p class="mt-3 mb-0">Enter your certificate serial number above to verify its authenticity.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!----------- main wrapper End ----------->
+
+    <!----------- footer Start ----------->
+    <footer>
+        <div class="container">
+            <div class="row footer-top-row">
+                <div class="col-lg-4">
+                    <div class="footer-cnt-social">
+                        <p>Together, we can uplift metaphysical sciences with dignity, responsibility, and harmony</p>
+
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="process_overview">
-                        <h3 class="process_heading">Process Overview</h3>
-
-                        <div class="section_list">
-                            <h4 class="text_main"><span><strong>1</strong></span> Submit Application</h4>
-                            <p>
-                                Complete the online application form, providing details about your qualifications,
-                                experience, and (for institutions) curriculum. Include supporting documents like
-                                certifications, syllabi, or client testimonials.
-                            </p>
+                <div class="col-lg-8">
+                    <div class="footer-menu-wpr">
+                        <div class="footer-menu">
+                            <div class="footer-title">Quick Links</div>
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="current-menu"><a href="accreditation.html">Accreditation</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
                         </div>
 
-                        <div class="section_list">
-                            <h4 class="text_main"><span><strong>2</strong></span> Review by ICVMS Panel</h4>
-                            <p>
-                                Our expert accreditors, including field specialists and ethics advisors, evaluate your
-                                application against our standards for quality, ethics, and impact.
-                            </p>
+                        <div class="footer-menu">
+                            <div class="footer-title">Resources</div>
+                            <ul>
+                                <li><a href="standards.html">Standards & Ethics</a></li>
+                                <li><a href="join.html">join us</a></li>
+                                <li><a href="news.html">News & Updates</a></li>
+                                <li><a href="verify.html">Trust Seal Verification</a></li>
+                            </ul>
                         </div>
 
-                        <div class="section_list">
-                            <h4 class="text_main"><span><strong>3</strong></span> Interview or Audit</h4>
-                            <p>
-                                Depending on the application type, we may conduct a virtual interview (for individuals)
-                                or an audit of teaching practices (for institutions).
-                            </p>
-                        </div>
-
-                        <div class="section_list">
-                            <h4 class="text_main"><span><strong>4</strong></span> Decision and Feedback</h4>
-                            <p>
-                                Receive a decision within 4–6 weeks. Approved applicants are awarded accreditation;
-                                others receive constructive feedback for improvement.
-                            </p>
-                        </div>
-
-                        <div class="section_list">
-                            <h4 class="text_main"><span><strong>5</strong></span> Ongoing Compliance</h4>
-                            <p>
-                                Accredited members must renew every 2 years, submitting updates on their practice or
-                                curriculum to maintain standards.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="button_section d-flex justify-content-start">
-                        <button class="apply_acc">Apply Now for Institutional Accreditation</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="benefits py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Benefits of Accreditation</h2>
-                <p class="text-muted">Becoming accredited with ICVMS unlocks opportunities and builds lasting trust</p>
-            </div>
-
-            <div class="row text-center g-4">
-
-                <!-- Step 1 -->
-                <div class="col-md-4">
-                    <div class="benefit-box h-100 p-4 shadow-sm rounded-4">
-
-                        <h5 class="fw-bold">Global Recognition</h5>
-                        <p class="text-muted">Feature the ICVMS accreditation seal on your website, certificates, and
-                            marketing materials.</p>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="col-md-4">
-                    <div class="benefit-box h-100 p-4 shadow-sm rounded-4">
-
-                        <h5 class="fw-bold">Directory Listing</h5>
-                        <p class="text-muted">Gain visibility through our searchable global directory of accredited
-                            practitioners and institutions.</p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="col-md-4">
-                    <div class="benefit-box h-100 p-4 shadow-sm rounded-4">
-
-                        <h5 class="fw-bold">Professional Development</h5>
-                        <p class="text-muted">Access exclusive webinars, workshops, and resources to enhance your skills
-                            and stay updated.</p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="col-md-6">
-                    <div class="benefit-box h-100 p-4 shadow-sm rounded-4">
-
-                        <h5 class="fw-bold">Community Support</h5>
-                        <p class="text-muted">Collaborate with a network of ethical professionals and contribute to
-                            global initiatives in metaphysical sciences.</p>
-                    </div>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="col-md-6">
-                    <div class="benefit-box h-100 p-4 shadow-sm rounded-4">
-
-                        <h5 class="fw-bold">Client Trust</h5>
-                        <p class="text-muted">Attract more students or clients who value verified credentials and
-                            ethical standards.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="code_of_ethics mt-5 mb-5">
-        <div class="head text-center">
-            <h2>Code of Ethics </h2>
-            <p>Our accreditation is rooted in a strict Code of Ethics, ensuring that all members uphold</p>
-        </div>
-        <div class="container">
-            <div class="row g-4 py-3">
-                <div class="col-md-6">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title">Integrity</h5>
-                        </div>
-                        <div class="card-body">
-
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title">Respect</h5>
-                        </div>
-                        <div class="card-body">
-
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4 py-3">
-                <div class="col-md-6">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title">Responsibility</h5>
-                        </div>
-                        <div class="card-body">
-
-                            <p class="card-text">Commitment to non-harmful, ethical practices that prioritize client
-                                well-being
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title">Transparency</h5>
-                        </div>
-                        <div class="card-body">
-
-                            <p class="card-text">Clear communication about methods, fees, and limitations of services
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-12">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h5 class="card-title"> Featured</h5>
-                        </div>
-                        <div class="card-body">
-
-                            <p class="card-text"> Dedication to ongoing education and professional growth.
-                            </p>
-
+                        <div class="footer-menu">
+                            <div class="footer-title">Legal</div>
+                            <ul>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
 
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                                 <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights reserved.</p>
 
-    <section class="accreditation_tires mt-5 mb-5">
-        <div class="head text-center mb-5 ">
-            <h2>Accreditation  Tiers</h2>
-            
-        </div>
-        <div class="container d-flex justify-content-center align-items-center">
-            <div class="card" style="width:100%;">
-                <div class="card-header text-center">
-                    <h2>ICVMS offers </h2>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>Individual Practitioner Accreditation</b> <br> <span> For solo practitioners or independent teachers. Ideal for those offering consultations or small-scale training</span></li>
-                    <li class="list-group-item"><b>Institutional Accreditation</b><br> <span> For schools or academies with structured programs, multiple instructors, or online courses</span></li>
-                    <li class="list-group-item"> <b>Advanced Accreditation</b><br><span>For practitioners or institutions with over 5 years of impactful contributions, eligible for leadership roles in ICVMS initiatives. Each tier includes a digital badge, directory listing, and access to ICVMS resources, with varying levels of recognition and responsibilities</span></li>
-                    
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="cta-section py-5  text-center">
-        <div class="container">
-            <h2 class="fw-bold mb-4">Get Started Today</h2>
-            <p class="lead mb-4">
-                Ready to elevate your practice or institution with ICVMS accreditation? Join a global community committed to excellence and ethics in Vedic and metaphysical sciences
-            </p>
-
-            <div class="button_link">
-                <a href=""><button class="accredition_button"> Start Application</button></a>
-                <a href="standards.html"><button class="verify_button">Download Application Guide</button></a>
-                <a href="standards.html"><button class="verify_button">Schedule a Consultation</button></a>
-            </div>
-        </div>
-    </section>
-
-     <section class="verify_certificate mt-5 mb-5 pt-5 py-5">
-        <div class="container">
-            <div class="row">
-                <div class="details_verify text-center">
-                    <h1 class="mb-3">Verify Your ICVMS Trust Seal</h1>
-                    <!-- <p class="lead">
-                        The ICVMS Trust Seal is your assurance of authenticity and quality in Vedic and Metaphysical
-                        studies. Each accredited certificate is issued with a unique, tamper-proof serial number.
-                    </p>
-                    <p>
-                        By entering the serial number below, you can instantly confirm the validity of any ICVMS-issued
-                        certificate, ensuring credibility and adherence to our global standards.
-                    </p> -->
-                </div>
-
-                <!-- Certificate Verification Box -->
-                <div class="col-md-6 mx-auto mt-4">
-                    <div class="verification-box p-4 shadow-sm rounded">
-                        <h3 class="text-center mb-3">Certificate Verification</h3>
-                        <p class="text-center small text-muted">Enter the 16-digit serial number found on your
-                            certificate.</p>
-                        <form>
-                            <input type="text" class="form-control mb-3" placeholder="e.g., ICVMS-1234567890123456">
-                            <button type="submit" class="btn btn-dark w-100">Verify Now</button>
-                        </form>
-                    </div>
-                    <div class="valid">
-                        <p>Enter your certificate serial number above to verify its authenticity</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-    <style>
-        .benefit-box {
-            background: #fff;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .benefit-box:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .benefit-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto;
-            background: #f8fafc;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-
-
-
-    <!-- <section class="individual">
-        <div class="head text-center">
-            <h3>Individual Certification</h3>
-            <p>For individual practitioners and scholars, ICVMS certification is a mark of professional credibility and
-                mastery in their respective fields, recognized globally as a standard of excellence.</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="content">
-
-                        <ul class="list_content">
-                            <h4>Eligibility Criteria</h4>
-                            <li>Minimum of X years professional experience or relevant academic qualifications.</li>
-                            <li>Demonstrated knowledge and understanding of Vedic/Metaphysical principles.</li>
-                            <li>Adherence to the ICVMS Code of Ethics.</li>
-                            <li>Established assessment and student support systems.</li>
-                            <li>Successfully pass ICVMS certification examinations/assessments.</li>
-                        </ul>
-
-                        
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="process_overview">
-                        <h3 class="process_heading">Process Overview</h3>
-                        <div class="section_list">
-
-                            <h4 class="text_main"> <span> <strong>1</strong></span> Application & Portfolio Submission
-                            </h4>
-                            <p>Submit your professional profile, educational background, and any relevant portfolio
-                                demonstrating your expertise and experience.</p>
-                        </div>
-                        <div class="section_list">
-
-                            <h4 class="text_main"> <span> <strong>2</strong></span> Panel Review & Interview</h4>
-                            <p>An expert panel reviews your application and may conduct an interview to assess your
-                                qualifications and ethical understanding.</p>
-                        </div>
-                        <div class="section_list">
-
-                            <h4 class="text_main"> <span> <strong>3</strong></span> Assessment & Examination</h4>
-                            <p>Candidates may undergo a comprehensive assessment or examination to validate their
-                                knowledge and practical skills.</p>
-                        </div>
-                        <div class="section_list">
-
-                            <h4 class="text_main"> <span> <strong>4</strong></span> Certification Approval</h4>
-                            <p>Upon successful completion of all stages, the Certification Board grants ICVMS Individual
-                                Certification.</p>
-                        </div>
-                        <div class="section_list">
-
-                            <h4 class="text_main"> <span> <strong>5</strong></span> Continuous Professional Development
-                            </h4>
-                            <p>Certified individuals are encouraged to engage in ongoing learning and development to
-                                maintain and enhance their expertise.</p>
-                        </div>
-                        <p></p>
-                    </div>
-                    <div class="button_section d-flex justify-content-start">
-                        <button class="apply_acc">Get Recognized Today as an ICVMS Certified Professional</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- footer section -->
-    <footer class="main_footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_details">
-                        <p>The International Council for Vedic & Metaphysical Studies (ICVMS) is dedicated to setting
-                            global...</p>
-                        <div class="icons mb-2">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-instagram" style="color: #f7f7f8;"></i>
-                            <i class="fa-brands fa-x-twitter" style="color: #f3f4f7;"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Quick Links</p>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="accreditation.html">
-                            <li>Accreditation</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact US</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Resources</p>
-                        <a href="standards.html">
-                            <li>Standards & Ethic</li>
-                        </a>
-                        <!-- <a href="directory.html">
-                            <li>Directory</li>
-                        </a> -->
-                        <a href="news.html">
-                            <li>News & Updates</li>
-                        </a>
-                        <a href="verify.html">
-                            <li>Trust Seal Verification</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="quick_links">
-                        <p>Legal</p>
-                        <a href="privacy.html">
-                            <li>Privacy Policy</li>
-                        </a>
-                        <a href="terms.html">
-                            <li>Terms of Service</li>
-                        </a>
-
-                    </ul>
-                </div>
             </div>
         </div>
     </footer>
+    <!----------- footer End ----------->
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <!-- ====================== Js file ================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom-js.js"></script>
 </body>
 
 </html>

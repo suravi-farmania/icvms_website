@@ -1,0 +1,76 @@
+.accreditation-hero-sec {
+    p {
+        margin-bottom: 2em;
+
+        @include tab-portrait {
+            margin-bottom: 1.5em;
+        }
+
+
+        @include mobile-lg {
+            margin-bottom: 1em;
+        }
+    }
+
+    .row-gap-y {
+        --bs-gutter-y: 50px;
+
+        @include tab-sm-portrait {
+            --bs-gutter-y: 40px;
+
+        }
+    }
+
+    .accreditation-hero-img {
+        @include tab-portrait {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.accreditation-proces-view {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .accreditation-proces-icon {
+        position: relative;
+
+        .accreditation-proces-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 1px;
+            background: var(--border-color);
+            height: 100vh;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+.accreditation-proces-btn-wpr {
+    padding-left: 60px;
+    text-align: center;
+
+    @include tab-portrait {
+        padding-left: 50px;
+    }
+
+    @include mobile-lg {
+        padding-left: 0;
+    }
+
+    .btn {
+        @include mobile-lg {
+            width: 100%;
+        }
+    }
+}

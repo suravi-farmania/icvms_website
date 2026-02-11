@@ -130,7 +130,7 @@
                 }
             }
 
-            &:hover {
+            &:hover,&.current-menu {
                 a {
                     color: var(--secondary-color);
                 }
@@ -143,6 +143,7 @@
             &:last-child {
                 margin-right: 0;
             }
+            
 
         }
     }

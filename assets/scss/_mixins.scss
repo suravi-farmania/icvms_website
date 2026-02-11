@@ -47,11 +47,16 @@
     }
 }
 
-// @mixin lists{
-//     list-style: none;
-//     margin: 0;
-//     padding: 0;
-// }
+@mixin lists{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+        // padding: 0;
+        margin: 0;
+    }
+}
 
 
 
