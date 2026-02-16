@@ -5,26 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICVMS</title>
+
     <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <!-- ====================== Css file ================== -->
-    <!--  Fonts  -->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
-    
-    <!-- third party CSS -->
-    <link href="assets/css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
 
-    <!-- custom CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
+    <!-- 🔥 Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 🔥 Load Google Fonts (still render blocking, but faster due to preconnect) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- 🚀 Load other CSS async (non render-blocking) -->
+    <link rel="preload" href="assets/css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+    </noscript>
+
+    <link rel="preload" href="assets/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+    </noscript>
+
+    <link rel="preload" href="assets/css/swiper.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/swiper.css">
+    </noscript>
+
+    <link rel="preload" href="assets/css/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </noscript>
+
+    <!-- ✅ Keep ONLY main.css as render-blocking -->
+    <link rel="stylesheet" href="assets/scss/main.css">
+
 
 </head>
 
@@ -38,7 +57,7 @@
 
             <nav class="navbar d-flex">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo-light.svg" alt="logo">
+                    <img src="images/logo-light.svg" alt="logo" fetchpriority="high" decoding="async">
                 </a>
 
                 <div class="menu-overlay" id="menu_overlay"></div>
@@ -128,7 +147,8 @@
 
                     <div class="col-lg-6">
                         <figure class="hero-img" data-aos="fade-left" data-aos-duration="1500">
-                            <img src="images/hero-img.webp" alt="image" class="img-">
+                            <img src="images/hero-img.webp" alt="image" width="600" height="800" loading="eager"
+                                fetchpriority="high" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -142,16 +162,17 @@
                 <div class="row hm-abt-row row-gap-y">
                     <div class="col-md-6 col-lg-5">
                         <div class="hm-abt-heading" data-aos="fade-right" data-aos-duration="800">
-                            <h2 >About the ICVMS</h2>
-                            <a href="about.html" class="btn btn-primary btn-sm">Learn More <i><img src="images/icon-right.svg"
-                                        alt=""></i></a>
+                            <h2>About the ICVMS</h2>
+                            <a href="about.html" class="btn btn-primary btn-sm">Learn More <i><img
+                                        src="images/icon-right.svg" alt=""></i></a>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-lg-7">
                         <div class="hm-abt-para">
 
-                            <p  data-aos="fade-left" data-aos-duration="1500">The <strong class="content-dark-color">International Council for Vedic and
+                            <p data-aos="fade-left" data-aos-duration="1500">The <strong
+                                    class="content-dark-color">International Council for Vedic and
                                     Metaphysical
                                     Studies (ICVMS)</strong> is a registered independent accreditation body
                                 dedicated to
@@ -171,7 +192,7 @@
             <div class="container">
                 <div class="row hm-mission-row align-items-center">
                     <div class="col-lg-5">
-                        <div class="hm-missn-head content-md content-dark-color" >
+                        <div class="hm-missn-head content-md content-dark-color">
                             <h2>Our Mission</h2>
                             <p>By creating a framework of trust, respect, and responsibility, we empower learners,
                                 institutions, and communities to benefit from these sciences in a dignified and
@@ -211,9 +232,9 @@
                                 </div>
 
                             </div>
-                            <div class="hm-missn-card-left" >
+                            <div class="hm-missn-card-left">
                                 <div data-aos="zoom-in" data-aos-duration="1000"
-                                    class="hm-missn-card bg-white box-shadow card-padding-sm d-flex flex-column gap-4 gap-lg-5 radius-sm" >
+                                    class="hm-missn-card bg-white box-shadow card-padding-sm d-flex flex-column gap-4 gap-lg-5 radius-sm">
                                     <figure class="icon-lg">
                                         <img src="images/icon-metaphysical.svg" alt="">
                                     </figure>
@@ -306,7 +327,8 @@
 
                 <div class="row pillar-card-row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="pillar-card box-shadow radius-md text-center bg-white" data-aos="flip-up" data-aos-duration="400">
+                        <div class="pillar-card box-shadow radius-md text-center bg-white" data-aos="flip-up"
+                            data-aos-duration="400">
                             <figure>
                                 <img src="images/pillar-card-icon1.svg" alt="">
                             </figure>
@@ -318,7 +340,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="pillar-card box-shadow radius-md text-center bg-white" data-aos="flip-up" data-aos-duration="800">
+                        <div class="pillar-card box-shadow radius-md text-center bg-white" data-aos="flip-up"
+                            data-aos-duration="800">
                             <figure>
                                 <img src="images/pillar-card-icon2.svg" alt="">
                             </figure>
@@ -330,7 +353,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="pillar-card box-shadow radius-md text-center bg-white" data-aos="flip-up" data-aos-duration="1200">
+                        <div class="pillar-card box-shadow radius-md text-center bg-white" data-aos="flip-up"
+                            data-aos-duration="1200">
                             <figure>
                                 <img src="images/pillar-card-icon3.svg" alt="">
                             </figure>
@@ -349,7 +373,7 @@
         <section class="cta-sec primary-bg">
             <div class="container">
                 <div class="cta-content textr-white text-center">
-                    <h2 class="text-white" >Join Our Global Community</h2>
+                    <h2 class="text-white">Join Our Global Community</h2>
                     <p>
                         Are you a practitioner or institution teaching Vedic or metaphysical sciences? <br>
                         Join us and become part of a growing global community of trusted professionals.
@@ -394,12 +418,10 @@
 
                         <div class="footer-social">
                             <ul>
-                                <li><a href="#" target="_blank"><img src="images/icon-fb-outline.svg" alt=""></a>
-                                </li>
-                                <li><a href="#" target="_blank"><img src="images/icon-linkdin-outline.svg" alt=""></a>
-                                </li>
-                                <li><a href="#" target="_blank"><img src="images/icon-x-outline.svg" alt=""></a>
-                                </li>
+                                <li><a href="https://x.com/icvmsofficial" target="_blank"><img
+                                            src="images/icon-x-outline.svg" alt=""></a></li>
+                                <li><a href="https://www.instagram.com/icv_ms" target="_blank"><img
+                                            src="images/icon-insta-outline.svg" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -441,7 +463,8 @@
 
             <div class="footer-divider"></div>
             <div class="footer-copyright">
-                                 <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights reserved.</p>
+                <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights
+                    reserved.</p>
 
             </div>
         </div>
@@ -449,12 +472,13 @@
     <!----------- footer End ----------->
 
     <!-- ====================== Js file ================== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/custom-js.js"></script>
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/custom-js.js" defer></script>
+
 </body>
 
 </html>

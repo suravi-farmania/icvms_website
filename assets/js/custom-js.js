@@ -1,4 +1,6 @@
-AOS.init();
+window.addEventListener("load", function () {
+  AOS.init();
+});;
 
 
 // ====== Hamburger Menu Click Js ====== //
@@ -77,33 +79,3 @@ if (header_Srch_close) {
 }
 
 
-
-
-
-/// ================= sample swiper script
-
-var doorsteploan = new Swiper('#doorstep-loan-slider', {
-
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: false,
-    loop: true,
-    // autoHeight: true, 
-    preventClicks: false,
-    preventClicksPropagation: false,
-    shortSwipes: false,
-
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    // },
-
-    navigation: {
-        nextEl: '.doorstep-loan-next',
-        prevEl: '.doorstep-loan-prev',
-    },
-
-});
-
-
-// =======================

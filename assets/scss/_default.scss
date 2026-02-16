@@ -47,38 +47,6 @@ a {
 
 
 
-ul,
-ol {
-    margin-bottom: 30px;
-
-    li {
-        margin-bottom: 0.6em;
-        position: relative;
-
-        &::marker {
-            color: var(--primary-color);
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
-ol {
-    li {
-        list-style: decimal;
-
-        &::marker {
-            color: var(--content-color);
-        }
-    }
-}
-
 
 
 h1,
@@ -131,6 +99,10 @@ h6,
 p {
     margin-bottom: 1.8em;
 
+    @include mobile-lg {
+        margin-bottom: 1.2em;
+    }
+
     &:last-child {
         margin: 0;
     }
@@ -144,9 +116,50 @@ p {
         }
     }
 
-    strong{
+    strong {
         color: var(--content-dark-color);
         font-weight: 500;
+    }
+}
+
+
+
+ul,
+ol {
+    margin-bottom: 1.8em;
+
+    @include mobile-lg {
+        margin-bottom: 1.2em;
+    }
+
+    @include mobile-lg {}
+
+    li {
+        margin-bottom: 0.6em;
+        position: relative;
+        line-height: 1.5;
+
+        &::marker {
+            color: var(--primary-color);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+ol {
+    li {
+        list-style: decimal;
+
+        &::marker {
+            color: var(--content-color);
+        }
     }
 }
 
