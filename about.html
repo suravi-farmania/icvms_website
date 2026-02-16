@@ -5,27 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICVMS</title>
+
     <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <!-- ====================== Css file ================== -->
-    <!--  Fonts  -->
+
+    <!-- 🔥 Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 🔥 Load Google Fonts (still render blocking, but faster due to preconnect) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
 
-    <!-- third party CSS -->
-    <link href="assets/css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
+    <!-- 🚀 Load other CSS async (non render-blocking) -->
+    <link rel="preload" href="assets/css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+    </noscript>
 
-    <!-- custom CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
+    <link rel="preload" href="assets/css/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </noscript>
 
+    <!-- ✅ Keep ONLY main.css as render-blocking -->
+    <link rel="preload" href="assets/scss/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/scss/main.css">
+    </noscript>
 </head>
 
 <body id="body">
@@ -112,8 +122,8 @@
         <section class="cmn-bnr-sec ">
             <div class="container">
                 <div class="cmn-bnr-content text-center">
-                    <h1 class="title-h2" >About the ICVMS</h1>
-                    <p >The <strong>International Council for Vedic and Metaphysical Studies
+                    <h1 class="title-h2">About the ICVMS</h1>
+                    <p>The <strong>International Council for Vedic and Metaphysical Studies
                             (ICVMS)</strong> is a registered independent accreditation body dedicated to ensuring
                         quality,
                         ethics, and authenticity in the teaching and practice of disciplines such as Astrology,
@@ -142,7 +152,8 @@
                         contribute to societal harmony.</p>
                 </div>
 
-                <div class="about-us-cd radius-lg box-shadow-lg d-flex" data-aos-duration="800" data-aos="fade-left" data-aos-delay="100">
+                <div class="about-us-cd radius-lg box-shadow-lg d-flex" data-aos-duration="800" data-aos="fade-left"
+                    data-aos-delay="100">
                     <div class="about-us-lt text-center">
                         <figure class="icon-with-bg secondary-light-bg mx-auto">
                             <img src="images/icon-vision.svg" alt="">
@@ -157,7 +168,8 @@
                         Pranic Healing, Vastu, Tarot, Reiki, and beyond.</p>
                 </div>
 
-                <div class="about-us-cd radius-lg box-shadow-lg d-flex" data-aos-duration="800" data-aos="fade-right" data-aos-delay="200">
+                <div class="about-us-cd radius-lg box-shadow-lg d-flex" data-aos-duration="800" data-aos="fade-right"
+                    data-aos-delay="200">
                     <div class="about-us-lt text-center">
                         <figure class="icon-with-bg secondary-light-bg mx-auto">
                             <img src="images/icon-history.svg" alt="">
@@ -186,7 +198,8 @@
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-gap-y">
                     <div class="col">
-                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800" data-aos="fade-up" data-aos-delay="100">
+                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800"
+                            data-aos="fade-up" data-aos-delay="100">
                             <div class="icon-with-bg secondary-light-bg">
                                 <img src="images/icon-accreditation.svg" alt="">
                             </div>
@@ -198,7 +211,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800"
+                            data-aos="fade-up" data-aos-delay="200">
                             <div class="icon-with-bg secondary-light-bg">
                                 <img src="images/icon-ethics.svg" alt="">
                             </div>
@@ -213,7 +227,8 @@
                     </div>
 
                     <div class="col">
-                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800" data-aos="fade-up" data-aos-delay="300">
+                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800"
+                            data-aos="fade-up" data-aos-delay="300">
                             <div class="icon-with-bg secondary-light-bg">
                                 <img src="images/icon-verification.svg" alt="">
                             </div>
@@ -228,7 +243,8 @@
                     </div>
 
                     <div class="col">
-                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800"
+                            data-aos="fade-up" data-aos-delay="400">
                             <div class="icon-with-bg secondary-light-bg">
                                 <img src="images/icon-community.svg" alt="">
                             </div>
@@ -243,7 +259,8 @@
                     </div>
 
                     <div class="col">
-                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800" data-aos="fade-up" data-aos-delay="500">
+                        <div class="box-shadow flex-column icon-text-card radius-md" data-aos-duration="800"
+                            data-aos="fade-up" data-aos-delay="500">
                             <div class="icon-with-bg secondary-light-bg">
                                 <img src="images/icon-advocacy.svg" alt="">
                             </div>
@@ -268,7 +285,7 @@
 
                 <div class="row row-gap-y">
                     <div class="col-lg-6">
-                        <div class="faq-head" data-aos-duration="800" data-aos="fade-right" >
+                        <div class="faq-head" data-aos-duration="800" data-aos="fade-right">
                             <h2>Why Choose ICVMS?</h2>
                             <p>Choosing ICVMS accreditation means aligning with a globally respected organization
                                 committed
@@ -277,7 +294,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="faq-accordion" data-aos-duration="800" data-aos="fade-left" >
+                        <div class="faq-accordion" data-aos-duration="800" data-aos="fade-left">
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h3 class="accordion-header">
@@ -486,7 +503,8 @@
 
             <div class="footer-divider"></div>
             <div class="footer-copyright">
-                                 <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights reserved.</p>
+                <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights
+                    reserved.</p>
 
             </div>
         </div>
@@ -494,12 +512,11 @@
     <!----------- footer End ----------->
 
     <!-- ====================== Js file ================== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/custom-js.js"></script>
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/custom-js.js" defer></script>
 </body>
 
 </html>

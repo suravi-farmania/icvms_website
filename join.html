@@ -5,26 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICVMS</title>
+
     <link rel="icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <!-- ====================== Css file ================== -->
-    <!--  Fonts  -->
+
+    <!-- 🔥 Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 🔥 Load Google Fonts (still render blocking, but faster due to preconnect) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
 
-    <!-- third party CSS -->
-    <link href="assets/css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css">
+    <!-- 🚀 Load other CSS async (non render-blocking) -->
+    <link rel="preload" href="assets/css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+    </noscript>
 
-    <!-- custom CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/scss/main.css">
+    <link rel="preload" href="assets/css/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </noscript>
+
+    <!-- ✅ Keep ONLY main.css as render-blocking -->
+    <link rel="preload" href="assets/scss/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/scss/main.css">
+    </noscript>
+
 
 </head>
 
@@ -149,7 +161,8 @@
                                 </div>
                             </div>
                             <div class="join-feature-card-btm">
-                                <a href="https://forms.zohopublic.in/nirpekshkumbhatskill1/form/AccreditationApplicationFormTrainer/formperma/_-ZiwG4G3Sd4NaLdpOmv2imLLNgI7KE8k9BKEmjH2E0" class="btn w-100">Learn More & Join</a>
+                                <a href="https://forms.zohopublic.in/nirpekshkumbhatskill1/form/AccreditationApplicationFormTrainer/formperma/_-ZiwG4G3Sd4NaLdpOmv2imLLNgI7KE8k9BKEmjH2E0"
+                                    class="btn w-100">Learn More & Join</a>
                             </div>
 
                         </div>
@@ -180,7 +193,8 @@
                                 </div>
                             </div>
                             <div class="join-feature-card-btm">
-                                <a href="https://forms.zohopublic.in/nirpekshkumbhatskill1/form/AccreditationApplicationFormInstitution/formperma/bmYZdM5sESTbF0vKaZ1lUpGv5vstUZxDcf6k15JNFV0" class="btn w-100">Learn More & Join</a>
+                                <a href="https://forms.zohopublic.in/nirpekshkumbhatskill1/form/AccreditationApplicationFormInstitution/formperma/bmYZdM5sESTbF0vKaZ1lUpGv5vstUZxDcf6k15JNFV0"
+                                    class="btn w-100">Learn More & Join</a>
                             </div>
 
                         </div>
@@ -210,7 +224,8 @@
                                 </div>
                             </div>
                             <div class="join-feature-card-btm">
-                                <a href="https://forms.zohopublic.in/nirpekshkumbhatskill1/form/AccreditationApplicationFormPractitioner/formperma/wmaApKMejY1vq_dHesxlDZiDYDacCIS3G2IBhBenjso" class="btn w-100">Learn More & Join</a>
+                                <a href="https://forms.zohopublic.in/nirpekshkumbhatskill1/form/AccreditationApplicationFormPractitioner/formperma/wmaApKMejY1vq_dHesxlDZiDYDacCIS3G2IBhBenjso"
+                                    class="btn w-100">Learn More & Join</a>
                             </div>
 
                         </div>
@@ -249,7 +264,7 @@
                         <p>Together, we can uplift metaphysical sciences with dignity, responsibility, and harmony</p>
 
                         <div class="footer-social">
-                           <ul>
+                            <ul>
                                 <li><a href="https://x.com/icvmsofficial" target="_blank"><img
                                             src="images/icon-x-outline.svg" alt=""></a></li>
                                 <li><a href="https://www.instagram.com/icv_ms" target="_blank"><img
@@ -295,7 +310,8 @@
 
             <div class="footer-divider"></div>
             <div class="footer-copyright">
-                                 <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights reserved.</p>
+                <p>© 2026 <a href="index.html">International Council for Vedic & Metaphysical Studies.</a> All rights
+                    reserved.</p>
 
             </div>
         </div>
@@ -303,12 +319,11 @@
     <!----------- footer End ----------->
 
     <!-- ====================== Js file ================== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/custom-js.js"></script>
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/aos.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/custom-js.js" defer></script>
 </body>
 
 </html>
