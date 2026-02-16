@@ -31,18 +31,16 @@
         <link rel="stylesheet" href="assets/css/font-awesome.css">
     </noscript>
 
-    <link rel="preload" href="assets/css/swiper.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="assets/css/swiper.css">
-    </noscript>
-
     <link rel="preload" href="assets/css/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="assets/css/aos.css">
     </noscript>
 
     <!-- ✅ Keep ONLY main.css as render-blocking -->
-    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="preload" href="assets/scss/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/scss/main.css">
+    </noscript>
 
 
 </head>
@@ -474,7 +472,6 @@
     <!-- ====================== Js file ================== -->
     <script src="assets/js/jquery.min.js" defer></script>
     <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/js/swiper.js" defer></script>
     <script src="assets/js/aos.js" defer></script>
     <script src="assets/js/scripts.js" defer></script>
     <script src="assets/js/custom-js.js" defer></script>
